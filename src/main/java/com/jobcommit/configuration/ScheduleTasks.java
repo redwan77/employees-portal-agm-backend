@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class ScheduleTasks {
 
 	//@Scheduled(cron="0 5 14 * * *")
-	@Scheduled(fixedRate = 1000)
+	//@Scheduled(fixedRate = 1000)
 	public void test() {
 		System.out.println("hello");
 	}

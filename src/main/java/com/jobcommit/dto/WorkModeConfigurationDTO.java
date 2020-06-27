@@ -4,6 +4,8 @@ public class WorkModeConfigurationDTO {
 	
 	private boolean isRemote ;
 	private boolean  isHoliday ;
+	
+	
 	public boolean isRemote() {
 		return isRemote;
 	}

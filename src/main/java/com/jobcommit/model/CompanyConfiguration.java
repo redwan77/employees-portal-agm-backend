@@ -9,8 +9,7 @@ import javax.persistence.Id;
 
 @Entity
 public class CompanyConfiguration {
-	
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -20,11 +19,54 @@ public class CompanyConfiguration {
 	// Localization
 	private Double longitude;
 	private Double latitude;
+	private Double AcceptRaduis;
+	
 	// Timing
 	private LocalTime startTime;
 	private LocalTime endTime;
-	private Byte margin; // Byte is compatible with numbers that do not exceed (2 pow 8 )
+	private Float margin; // Byte is compatible with numbers that do not exceed (2 pow 8 )
 	private boolean isMarginActivated;
+
+	private Float theoricalDailyWorkedTime;
+	private Float theoricalMonthlyWorkedTime;
+	private Float theoricalWeeklyWorkedTime;
+
+	
+	
+	
+	public Float getTheoricalDailyWorkedTime() {
+		return theoricalDailyWorkedTime;
+	}
+
+	public void setTheoricalDailyWorkedTime(Float theoricalDailyWorkedTime) {
+		this.theoricalDailyWorkedTime = theoricalDailyWorkedTime;
+	}
+
+	public Float getTheoricalMonthlyWorkedTime() {
+		return theoricalMonthlyWorkedTime;
+	}
+
+	public void setTheoricalMonthlyWorkedTime(Float theoricalMonthlyWorkedTime) {
+		this.theoricalMonthlyWorkedTime = theoricalMonthlyWorkedTime;
+	}
+
+	public Float getTheoricalWeeklyWorkedTime() {
+		return theoricalWeeklyWorkedTime;
+	}
+
+	public void setTheoricalWeeklyWorkedTime(Float theoricalWeeklyWorkedTime) {
+		this.theoricalWeeklyWorkedTime = theoricalWeeklyWorkedTime;
+	}
+
+	
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public CompanyConfiguration() {
 		super();
@@ -78,11 +120,11 @@ public class CompanyConfiguration {
 		this.endTime = endTime;
 	}
 
-	public Byte getMargin() {
+	public Float getMargin() {
 		return margin;
 	}
 
-	public void setMargin(Byte margin) {
+	public void setMargin(Float margin) {
 		this.margin = margin;
 	}
 
@@ -93,5 +135,13 @@ public class CompanyConfiguration {
 	public void setMarginActivated(boolean isMarginActivated) {
 		this.isMarginActivated = isMarginActivated;
 	}
+	public Double getAcceptRaduis() {
+		return AcceptRaduis;
+	}
+
+	public void setAcceptRaduis(Double acceptRaduis) {
+		AcceptRaduis = acceptRaduis;
+	}
+
 
 }
