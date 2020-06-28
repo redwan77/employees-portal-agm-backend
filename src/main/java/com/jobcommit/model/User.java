@@ -72,7 +72,7 @@ public class User {
 		this.lastName = lastName;
 	}
 
-	public boolean isRemote() {
+	public boolean getIsRemote() {
 		return isRemote;
 	}
 
@@ -80,7 +80,7 @@ public class User {
 		this.isRemote = isRemote;
 	}
 
-	public boolean isInHoliday() {
+	public boolean getIsInHoliday() {
 		return isInHoliday;
 	}
 
@@ -88,7 +88,7 @@ public class User {
 		this.isInHoliday = isInHoliday;
 	}
 
-	public boolean isOut() {
+	public boolean getIsOut() {
 		return isOut;
 	}
 
