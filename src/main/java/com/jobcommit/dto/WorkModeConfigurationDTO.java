@@ -6,21 +6,35 @@ public class WorkModeConfigurationDTO {
 	private boolean  isHoliday ;
 	
 	
-	public boolean isRemote() {
+	
+	public boolean getIsRemote() {
 		return isRemote;
 	}
+
+
+
 	public void setRemote(boolean isRemote) {
 		this.isRemote = isRemote;
 	}
-	public boolean isHoliday() {
+
+
+
+	public boolean getIsHoliday() {
 		return isHoliday;
 	}
+
+
+
 	public void setHoliday(boolean isHoliday) {
 		this.isHoliday = isHoliday;
 	}
-	public WorkModeConfigurationDTO() {
-		super();
-		// TODO Auto-generated constructor stub
+
+
+
+	@Override
+	public String toString() {
+		return "WorkModeConfigurationDTO [isRemote=" + isRemote + ", isHoliday=" + isHoliday + "]";
 	}
 
+	
 }
