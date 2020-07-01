@@ -7,15 +7,24 @@ public class WorkModeConfigurationDTO {
 	
 	
 	
+
+
+
 	public boolean getIsRemote() {
 		return isRemote;
 	}
 
 
 
-	public void setRemote(boolean isRemote) {
+
+
+
+	public void setIsRemote(boolean isRemote) {
 		this.isRemote = isRemote;
 	}
+
+
+
 
 
 
@@ -25,9 +34,15 @@ public class WorkModeConfigurationDTO {
 
 
 
-	public void setHoliday(boolean isHoliday) {
+
+
+
+	public void setIsHoliday(boolean isHoliday) {
 		this.isHoliday = isHoliday;
 	}
+
+
+
 
 
 

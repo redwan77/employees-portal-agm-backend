@@ -103,8 +103,8 @@ public class ConfigurationController {
 		WorkModeConfigurationDTO response = new WorkModeConfigurationDTO();
 		Optional<CompanyConfiguration> configurationResponse = this.configRepository.findById(1l);
 
-		response.setRemote(configurationResponse.get().isRemoteMode());
-		response.setHoliday(configurationResponse.get().isHolidayMode());
+		response.setIsRemote(configurationResponse.get().isRemoteMode());
+		response.setIsHoliday(configurationResponse.get().isHolidayMode());
 		return new ResponseEntity<WorkModeConfigurationDTO>(response, HttpStatus.OK);
 	}
 
@@ -141,8 +141,8 @@ public class ConfigurationController {
 		WorkModeConfigurationDTO response = new WorkModeConfigurationDTO();
 		Optional<CompanyConfiguration> configurationResponse = this.configRepository.findById(1l);
 		if(configurationResponse.isPresent()) {
-			response.setRemote(configurationResponse.get().isRemoteMode());
-			response.setHoliday(configurationResponse.get().isHolidayMode());
+			response.setIsRemote(configurationResponse.get().isRemoteMode());
+			response.setIsHoliday(configurationResponse.get().isHolidayMode());
 		}
 		return new ResponseEntity<WorkModeConfigurationDTO>(response, HttpStatus.OK);
 	}

@@ -18,8 +18,18 @@ public class UserDTO {
 	private String email;
 	private String adress;
 	private boolean isRemote;
+	private boolean isHoliday;
 	
 	
+	
+	
+	
+	public boolean getIsHoliday() {
+		return isHoliday;
+	}
+	public void setIsHoliday(boolean isHoliday) {
+		this.isHoliday = isHoliday;
+	}
 	public Long getId() {
 		return id;
 	}

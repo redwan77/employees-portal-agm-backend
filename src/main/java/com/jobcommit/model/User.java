@@ -24,8 +24,18 @@ public class User {
 	private String adress;
 	// state
 	private boolean isRemote;
-	private boolean isInHoliday;
+	private boolean isHoliday;
 	private boolean isOut;
+	
+	// security
+	private String login;
+	private String password;
+
+	
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	@Enumerated(EnumType.STRING)
 	private Role role;
@@ -48,6 +58,18 @@ public class User {
 		// TODO Auto-generated constructor stub
 	}
 
+	public String getLogin() {
+		return login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+	
 	public Long getId() {
 		return id;
 	}
@@ -72,30 +94,6 @@ public class User {
 		this.lastName = lastName;
 	}
 
-	public boolean getIsRemote() {
-		return isRemote;
-	}
-
-	public void setRemote(boolean isRemote) {
-		this.isRemote = isRemote;
-	}
-
-	public boolean getIsInHoliday() {
-		return isInHoliday;
-	}
-
-	public void setInHoliday(boolean isInHoliday) {
-		this.isInHoliday = isInHoliday;
-	}
-
-	public boolean getIsOut() {
-		return isOut;
-	}
-
-	public void setOut(boolean isOut) {
-		this.isOut = isOut;
-	}
-
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
@@ -112,6 +110,16 @@ public class User {
 		this.email = email;
 	}
 
+	public String getAdress() {
+		return adress;
+	}
+
+	public void setAdress(String adress) {
+		this.adress = adress;
+	}
+
+	
+
 	public Role getRole() {
 		return role;
 	}
@@ -120,12 +128,56 @@ public class User {
 		this.role = role;
 	}
 
-	public String getAdress() {
-		return adress;
+	public List<DailyRecord> getDailyRecords() {
+		return dailyRecords;
 	}
 
-	public void setAdress(String adress) {
-		this.adress = adress;
+	public void setDailyRecords(List<DailyRecord> dailyRecords) {
+		this.dailyRecords = dailyRecords;
 	}
+
+	public List<MonthlyRecord> getMonthlyRecord() {
+		return monthlyRecord;
+	}
+
+	public void setMonthlyRecord(List<MonthlyRecord> monthlyRecord) {
+		this.monthlyRecord = monthlyRecord;
+	}
+
+	public List<WeeklyRecord> getWeeklyRecord() {
+		return weeklyRecord;
+	}
+
+	public void setWeeklyRecord(List<WeeklyRecord> weeklyRecord) {
+		this.weeklyRecord = weeklyRecord;
+	}
+
+	public boolean getIsRemote() {
+		return isRemote;
+	}
+
+	public void setIsRemote(boolean isRemote) {
+		this.isRemote = isRemote;
+	}
+
+	public boolean getIsHoliday() {
+		return isHoliday;
+	}
+
+	public void setIsHoliday(boolean isHoliday) {
+		this.isHoliday = isHoliday;
+	}
+
+	public boolean getIsOut() {
+		return isOut;
+	}
+
+	public void setIsOut(boolean isOut) {
+		this.isOut = isOut;
+	}
+	
+
+	
+
 
 }
