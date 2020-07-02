@@ -1,0 +1,33 @@
+package com.jobcommit.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.jobcommit.model.User;
+import com.jobcommit.repository.UserRepository;
+import com.jobcommit.security.forms.Login;
+
+@RestController
+@RequestMapping("login")
+@CrossOrigin("**")
+public class AuthenticationController {
+	
+	@Autowired
+	public UserRepository userRepository;
+	
+	@PostMapping
+	public ResponseEntity<?> login(@RequestBody Login login){
+		User user = userRepository.findByEmailAndPassword(login.getLogin(), login.getPassword());
+		if(user !=null) {
+			return new ResponseEntity<>(HttpStatus.OK);
+		}
+		return new ResponseEntity<>(HttpStatus.FORBIDDEN);
+	}
+
+}
