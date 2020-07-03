@@ -24,10 +24,11 @@ import com.jobcommit.dto.WorkModeConfigurationDTO;
 import com.jobcommit.model.Role;
 import com.jobcommit.model.User;
 import com.jobcommit.repository.UserRepository;
-
+import com.jobcommit.security.CustomSecurityAthenticationProvider;
+@CrossOrigin("**")
 @RestController
 @RequestMapping("users")
-@CrossOrigin("**")
+
 public class UsersController {
 
 	@Autowired
@@ -80,6 +81,7 @@ public class UsersController {
 			dto.setIsHoliday(empl.getIsHoliday());
 			dto.setIsRemote(empl.getIsRemote());
 			response.add(dto);
+			System.out.println("the current loged in user is :"+CustomSecurityAthenticationProvider.userDetails.getName());
 		});
 		return new ResponseEntity<>(response, HttpStatus.OK);
 

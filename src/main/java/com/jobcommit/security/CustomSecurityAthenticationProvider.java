@@ -9,13 +9,21 @@ import com.jobcommit.repository.UserRepository;
 @Service
 public class CustomSecurityAthenticationProvider {
 
-	@Autowired
-	private UserRepository userRepository;
+	
+	public  UserRepository userRepository;
 
+	public static UserRepository repo ;
+	
 	public static CustomSecurityUserDetails userDetails;
+	
+	@Autowired
+	public CustomSecurityAthenticationProvider(UserRepository r) {
+		this.userRepository = r ;
+		CustomSecurityAthenticationProvider.repo = r;
+	}
 
-	public boolean authenticate(CustomBasicAutheticationUserCredentials credentials) {
-		User user = this.userRepository.findByEmailAndPassword(credentials.getName(), credentials.getPassword());
+	public static boolean authenticate(CustomBasicAutheticationUserCredentials credentials) {
+		User user = CustomSecurityAthenticationProvider.repo.findByEmailAndPassword(credentials.getLogin(), credentials.getPassword());
 		if (user != null) {
 			CustomSecurityUserDetails dts = new CustomSecurityUserDetails();
 			dts.setId(user.getId());

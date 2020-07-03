@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.jobcommit.client_response.UserLoginSuccess;
 import com.jobcommit.model.User;
 import com.jobcommit.repository.UserRepository;
 import com.jobcommit.security.forms.Login;
@@ -17,15 +18,19 @@ import com.jobcommit.security.forms.Login;
 @RequestMapping("login")
 @CrossOrigin("**")
 public class AuthenticationController {
-	
+
 	@Autowired
 	public UserRepository userRepository;
-	
+
 	@PostMapping
-	public ResponseEntity<?> login(@RequestBody Login login){
+	public ResponseEntity<?> login(@RequestBody Login login) {
 		User user = userRepository.findByEmailAndPassword(login.getLogin(), login.getPassword());
-		if(user !=null) {
-			return new ResponseEntity<>(HttpStatus.OK);
+		if (user != null) {
+			UserLoginSuccess info = new UserLoginSuccess();
+			info.setUsername(user.getName());
+			info.setLastname(user.getLastName());
+			info.setRole(user.getRole().name());
+			return new ResponseEntity<>(info, HttpStatus.OK);
 		}
 		return new ResponseEntity<>(HttpStatus.FORBIDDEN);
 	}
