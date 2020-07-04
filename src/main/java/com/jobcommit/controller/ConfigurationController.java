@@ -19,8 +19,8 @@ import com.jobcommit.model.CompanyConfiguration;
 import com.jobcommit.repository.ConfigurationRepository;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("configuration")
-@CrossOrigin("**")
 public class ConfigurationController {
 
 	@Autowired

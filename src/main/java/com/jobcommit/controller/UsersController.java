@@ -25,7 +25,7 @@ import com.jobcommit.model.Role;
 import com.jobcommit.model.User;
 import com.jobcommit.repository.UserRepository;
 import com.jobcommit.security.CustomSecurityAthenticationProvider;
-@CrossOrigin("**")
+@CrossOrigin("*")
 @RestController
 @RequestMapping("users")
 

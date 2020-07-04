@@ -15,8 +15,8 @@ import com.jobcommit.repository.UserRepository;
 import com.jobcommit.security.forms.Login;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("login")
-@CrossOrigin("**")
 public class AuthenticationController {
 
 	@Autowired
