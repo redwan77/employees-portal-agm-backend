@@ -23,7 +23,7 @@ public class CustomSecurityAthenticationProvider {
 	}
 
 	public static boolean authenticate(CustomBasicAutheticationUserCredentials credentials) {
-		User user = CustomSecurityAthenticationProvider.repo.findByEmailAndPassword(credentials.getLogin(), credentials.getPassword());
+		User user = CustomSecurityAthenticationProvider.repo.findByLoginAndPassword(credentials.getLogin(), credentials.getPassword());
 		if (user != null) {
 			CustomSecurityUserDetails dts = new CustomSecurityUserDetails();
 			dts.setId(user.getId());

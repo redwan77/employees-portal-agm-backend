@@ -19,12 +19,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.jobcommit.client_response.UserCreatedSuccess;
+import com.jobcommit.client_response.UserStatus;
 import com.jobcommit.dto.UserDTO;
 import com.jobcommit.dto.WorkModeConfigurationDTO;
 import com.jobcommit.model.Role;
 import com.jobcommit.model.User;
 import com.jobcommit.repository.UserRepository;
 import com.jobcommit.security.CustomSecurityAthenticationProvider;
+
 @CrossOrigin("*")
 @RestController
 @RequestMapping("users")
@@ -36,6 +38,7 @@ public class UsersController {
 
 	@PostMapping("addEmployee")
 	public ResponseEntity<?> addEmployee(@RequestBody UserDTO body) {
+		
 		User user = new User();
 		user.setAdress(body.getAdress());
 		user.setRole(Role.EMPLOYEE);
@@ -43,14 +46,13 @@ public class UsersController {
 		user.setEmail(body.getEmail());
 		user.setLastName(body.getLastName());
 		user.setPhoneNumber(body.getPhoneNumber());
-		
 		user.setIsRemote(body.getIsRemote());
 		user.setIsHoliday(false);
 		user.setLogin(body.getEmail());
 		user.setPassword(this.alphaNumericString(7));
+		user.setIsOut(false);
 		this.userRepository.save(user);
-		
-		
+
 		UserCreatedSuccess reposne = new UserCreatedSuccess();
 		reposne.setLogin(body.getEmail());
 		reposne.setPassword(this.alphaNumericString(7));
@@ -77,11 +79,12 @@ public class UsersController {
 			dto.setName(empl.getName());
 			dto.setLastName(empl.getLastName());
 			dto.setPhoneNumber(empl.getPhoneNumber());
-			
+
 			dto.setIsHoliday(empl.getIsHoliday());
 			dto.setIsRemote(empl.getIsRemote());
 			response.add(dto);
-			System.out.println("the current loged in user is :"+CustomSecurityAthenticationProvider.userDetails.getName());
+			System.out.println(
+					"the current loged in user is :" + CustomSecurityAthenticationProvider.userDetails.getName());
 		});
 		return new ResponseEntity<>(response, HttpStatus.OK);
 
@@ -121,10 +124,27 @@ public class UsersController {
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 
 	}
-	
+
 	@GetMapping("all")
-	public List all() {
+	public List<User> all() {
 		return this.userRepository.findAll();
+	}
+
+	@GetMapping("status")
+	public ResponseEntity<?> getEmployeeStatus() {
+		try {
+			Optional<User> user = this.userRepository.findById(CustomSecurityAthenticationProvider.userDetails.getId());
+			System.out.println("current user name :" + user.get().getName() + "is out :" + user.get().getIsOut());
+			if (user.isPresent()) {
+				UserStatus status = new UserStatus();
+				status.setIsIn(!user.get().getIsOut());
+				return new ResponseEntity<>(status, HttpStatus.OK);
+			} else {
+				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			}
+		} catch (Exception e) {
+			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 	}
 
 	public String alphaNumericString(int len) {

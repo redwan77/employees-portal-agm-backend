@@ -37,6 +37,8 @@ public class AuthenticationFilter extends OncePerRequestFilter {
 		headers.keySet().forEach(k -> {
 			System.out.println(k + " => " + headers.get(k));
 		});
+		
+		System.out.println("******************************************************");
 
 		if (request.getRequestURI().contentEquals("/login")) {
 			filterChain.doFilter(request, response);
@@ -52,8 +54,6 @@ public class AuthenticationFilter extends OncePerRequestFilter {
 			ucredentials.setLogin(values[0]);
 			ucredentials.setPassword(values[1]);
 			if (CustomSecurityAthenticationProvider.authenticate(ucredentials)) {
-				System.out.println("Success");
-
 				filterChain.doFilter(request, response);
 			} else {
 				response.sendError(401);

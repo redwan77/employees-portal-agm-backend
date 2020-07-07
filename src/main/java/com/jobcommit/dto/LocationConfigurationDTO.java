@@ -33,4 +33,13 @@ public class LocationConfigurationDTO {
 		this.distance = distance;
 	}
 
+	@Override
+	public String toString() {
+		return "LocationConfigurationDTO [langitude=" + langitude + ", atitude=" + atitude + ", distance=" + distance
+				+ "]";
+	}
+	
+	
+	
+
 }

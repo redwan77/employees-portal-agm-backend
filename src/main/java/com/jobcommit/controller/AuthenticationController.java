@@ -24,12 +24,19 @@ public class AuthenticationController {
 
 	@PostMapping
 	public ResponseEntity<?> login(@RequestBody Login login) {
-		User user = userRepository.findByEmailAndPassword(login.getLogin(), login.getPassword());
+		
+		User user = userRepository.findByLoginAndPassword(login.getLogin(), login.getPassword());
+		
 		if (user != null) {
+			
 			UserLoginSuccess info = new UserLoginSuccess();
+			
 			info.setUsername(user.getName());
+			
 			info.setLastname(user.getLastName());
+			
 			info.setRole(user.getRole().name());
+			
 			return new ResponseEntity<>(info, HttpStatus.OK);
 		}
 		return new ResponseEntity<>(HttpStatus.FORBIDDEN);

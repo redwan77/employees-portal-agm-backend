@@ -13,9 +13,11 @@ public class CompanyConfiguration {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
 	// work modes
 	private boolean isRemoteMode;
 	private boolean isHolidayMode;
+	
 	// Localization
 	private Double longitude;
 	private Double latitude;
@@ -27,6 +29,7 @@ public class CompanyConfiguration {
 	private Float margin; // Byte is compatible with numbers that do not exceed (2 pow 8 )
 	private boolean isMarginActivated;
 
+	// working time
 	private Float theoricalDailyWorkedTime;
 	private Float theoricalMonthlyWorkedTime;
 	private Float theoricalWeeklyWorkedTime;

@@ -1,8 +1,8 @@
 package com.jobcommit.user_requests;
 
-import java.time.LocalDateTime;
+import java.time.LocalTime;
 
-public class PresenceRequest {
+public class EntranceRequest {
 
 	private Long IssuerId;
 	private Location location;
@@ -21,11 +21,10 @@ public class PresenceRequest {
 	 * Date oldDate = ... LocalDateTime newDateTime =
 	 * LocalDateTime.from(Instant.ofEpochMilli(oldDate.getTime()));
 	 */
-	private LocalDateTime requestTime;
+	private LocalTime requestTime;
 
-	public PresenceRequest() {
+	public EntranceRequest() {
 		super();
-		this.requestTime = LocalDateTime.now();
 	}
 
 	public Long getIssuerId() {
@@ -44,12 +43,18 @@ public class PresenceRequest {
 		this.location = location;
 	}
 
-	public LocalDateTime getRequestTime() {
+	public LocalTime getRequestTime() {
 		return requestTime;
 	}
 
-	public void setRequestTime(LocalDateTime requestTime) {
+	public void setRequestTime(LocalTime requestTime) {
 		this.requestTime = requestTime;
+	}
+
+	@Override
+	public String toString() {
+		return "EntranceRequest [IssuerId=" + IssuerId + ", location=" + location + ", requestTime=" + requestTime
+				+ "]";
 	}
 
 }

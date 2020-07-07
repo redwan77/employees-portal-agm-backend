@@ -26,12 +26,10 @@ public class User {
 	private boolean isRemote;
 	private boolean isHoliday;
 	private boolean isOut;
-	
+
 	// security
 	private String login;
 	private String password;
-
-	
 
 	public void setPassword(String password) {
 		this.password = password;
@@ -46,11 +44,11 @@ public class User {
 	 * apply saver to the parent that should affect the DB to remove the child
 	 * entity (it is an ORM specification)
 	 */
-	@OneToMany(cascade = CascadeType.ALL,orphanRemoval = true)
+	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
 	List<DailyRecord> dailyRecords;
-	@OneToMany(cascade = CascadeType.ALL)
+	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
 	List<MonthlyRecord> monthlyRecord;
-	@OneToMany(cascade = CascadeType.ALL)
+	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
 	List<WeeklyRecord> weeklyRecord;
 
 	public User() {
@@ -69,7 +67,7 @@ public class User {
 	public String getPassword() {
 		return password;
 	}
-	
+
 	public Long getId() {
 		return id;
 	}
@@ -117,8 +115,6 @@ public class User {
 	public void setAdress(String adress) {
 		this.adress = adress;
 	}
-
-	
 
 	public Role getRole() {
 		return role;
@@ -175,9 +171,5 @@ public class User {
 	public void setIsOut(boolean isOut) {
 		this.isOut = isOut;
 	}
-	
-
-	
-
 
 }
