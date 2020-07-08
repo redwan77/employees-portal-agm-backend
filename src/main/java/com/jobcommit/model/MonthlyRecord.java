@@ -2,6 +2,10 @@ package com.jobcommit.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class MonthlyRecord {
@@ -13,6 +17,20 @@ public class MonthlyRecord {
 	private Double delay;
 	private Double theorical;
 	private Double verified;
+	@ManyToOne
+	@JoinColumn(name = "user")
+	@JsonIgnore
+	private User user ;
+	
+	
+	
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
 	
 
 	public MonthlyRecord() {

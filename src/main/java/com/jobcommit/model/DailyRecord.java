@@ -1,18 +1,19 @@
 package com.jobcommit.model;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Set;
 
-import javax.persistence.CollectionTable;
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class DailyRecord {
@@ -23,6 +24,30 @@ public class DailyRecord {
 
 	private LocalTime entranceTime;
 	private LocalTime exitTime;
+	private LocalDate date ;
+	@ManyToOne
+	@JoinColumn(name = "user")
+	@JsonIgnore
+	private User user ;
+	
+	
+	
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public LocalDate getDate() {
+		return date;
+	}
+
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
+ 
 	private Integer breaks;
 	private Double Worked;
 	private Double delay;
@@ -52,6 +77,8 @@ public class DailyRecord {
 	public void setEntranceTime(LocalTime entranceTime) {
 		this.entranceTime = entranceTime;
 	}
+
+	 
 
 	public LocalTime getExitTime() {
 		return exitTime;
@@ -115,6 +142,15 @@ public class DailyRecord {
 	public void setExitReasons(Set<ExitReason> exitReasons) {
 		this.exitReasons = exitReasons;
 	}
+
+	@Override
+	public String toString() {
+		return "DailyRecord [id=" + id + ", entranceTime=" + entranceTime + ", exitTime=" + exitTime + ", date=" + date
+				+ ", breaks=" + breaks + ", Worked=" + Worked + ", delay=" + delay + ", theorical=" + theorical
+				+ ", exitReasons=" + exitReasons + "]";
+	}
+	
+	
 	
 
 }

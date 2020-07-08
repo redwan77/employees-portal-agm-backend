@@ -50,7 +50,7 @@ public class UsersController {
 		user.setIsHoliday(false);
 		user.setLogin(body.getEmail());
 		user.setPassword(this.alphaNumericString(7));
-		user.setIsOut(false);
+		user.setIsOut(true);
 		this.userRepository.save(user);
 
 		UserCreatedSuccess reposne = new UserCreatedSuccess();
