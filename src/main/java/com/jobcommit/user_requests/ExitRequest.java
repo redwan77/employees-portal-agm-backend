@@ -10,6 +10,8 @@ public class ExitRequest {
 	private Location location;
 	private LocalTime requestTime;
 	
+	private boolean golbalExit ;
+	
 	private ExitReason reason ;
 	
 	
@@ -40,6 +42,12 @@ public class ExitRequest {
 	}
 	public void setReason(ExitReason reason) {
 		this.reason = reason;
+	}
+	public boolean getGolbalExit() {
+		return golbalExit;
+	}
+	public void setGolbalExit(boolean golbalExit) {
+		this.golbalExit = golbalExit;
 	}
 	
 }

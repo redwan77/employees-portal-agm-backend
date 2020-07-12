@@ -44,11 +44,11 @@ public class User {
 	 * apply saver to the parent that should affect the DB to remove the child
 	 * entity (it is an ORM specification)
 	 */
-	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true , mappedBy = "user")
 	List<DailyRecord> dailyRecords;
-	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true , mappedBy = "user")
 	List<MonthlyRecord> monthlyRecord;
-	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true , mappedBy = "user")
 	List<WeeklyRecord> weeklyRecord;
 
 	public User() {

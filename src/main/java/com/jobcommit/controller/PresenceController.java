@@ -1,5 +1,7 @@
 package com.jobcommit.controller;
 
+import java.time.Duration;
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Optional;
@@ -16,7 +18,7 @@ import com.jobcommit.model.CompanyConfiguration;
 import com.jobcommit.model.DailyRecord;
 import com.jobcommit.model.User;
 import com.jobcommit.repository.ConfigurationRepository;
-import com.jobcommit.repository.DailyRepository;
+import com.jobcommit.repository.DailyRecordRepository;
 import com.jobcommit.repository.UserRepository;
 import com.jobcommit.security.CustomSecurityAthenticationProvider;
 import com.jobcommit.service.UserService;
@@ -24,6 +26,8 @@ import com.jobcommit.user_requests.EntranceRequest;
 import com.jobcommit.user_requests.ExitRequest;
 import com.jobcommit.user_requests.Location;
 import com.jobcommit.utils.GeolocalizationUtils;
+
+import net.bytebuddy.asm.Advice.Local;
 
 @RestController
 @RequestMapping("presence")
@@ -36,12 +40,12 @@ public class PresenceController {
 	private UserRepository userRepository;
 
 	@Autowired
-	private DailyRepository dailyRepository;
-	
+	private DailyRecordRepository dailyRepository;
+
 	@Autowired
 	private UserService userService;
-	
-	private final int TEST_TIME_OFFSET = 6; 
+
+	private final int TEST_TIME_OFFSET = 0;
 
 	@PostMapping("entrance")
 	public ResponseEntity<?> declareEntrance(@RequestBody EntranceRequest request) {
@@ -52,68 +56,93 @@ public class PresenceController {
 
 		request.setRequestTime(LocalTime.now());
 
-		try {
+		/// try {
 
-			if (request.getLocation() != null && currentUser.isPresent()) {
+		if (request.getLocation() != null && currentUser.isPresent()) {
 
-				double distance = GeolocalizationUtils.distance(request.getLocation().getLatitude(),
-						configuration.getLatitude(), request.getLocation().getLongitude(),
-						configuration.getLongitude());
+			double distance = GeolocalizationUtils.distance(request.getLocation().getLatitude(),
+					configuration.getLatitude(), request.getLocation().getLongitude(), configuration.getLongitude());
 
-				double AcceptRaduis = configuration.getAcceptRaduis();
+			double AcceptRaduis = configuration.getAcceptRaduis();
 
-				System.out.println("distance :" + distance);
+			LocalDate currentDate = LocalDate.now();
 
-				System.out.println("is out :" + currentUser.get().getIsOut());
+			DailyRecord currentDaily = dailyRepository.findByDateAndUserId(currentDate, currentUser.get().getId());
+			LocalTime exit = (currentDaily.getExitTime());
+			System.out.println((currentDaily.getExitTime() != null)+ "   result" );
 
-				System.out.println("time is :" + request.getRequestTime());
+			if ((distance < AcceptRaduis && currentUser.get().getIsOut() && !currentUser.get().getIsHoliday()
+			/*
+			 * WARNING : ADDED 3 HOURES DIFFIRENCE FOR TESTING PERPUSES
+			 */
+					&& request.getRequestTime().minusHours(TEST_TIME_OFFSET)
+							.compareTo(configuration.getStartTime()) >= 0
+					&& currentDaily.getExitTime() == null) || currentUser.get().getIsRemote()) {
+				// && request.getRequestTime().compareTo(configuration.getEndTime()) <= 0
 
-				System.out.println("is holiday :" + currentUser.get().getIsHoliday());
+				long delay = ChronoUnit.MINUTES.between(request.getRequestTime(), configuration.getStartTime());
 
-				System.out.println("accept radius :" + AcceptRaduis);
-
-				System.out.println("time compare :" + request.getRequestTime().compareTo(configuration.getStartTime()));
-
-				if ((distance < AcceptRaduis && currentUser.get().getIsOut() && !currentUser.get().getIsHoliday()
 				/*
-				 * WARNING : ADDED 3 HOURES DIFFIRENCE FOR TESTING PERPUSES
+				 * make sure that the daily record is successfully created if this was the first
+				 * entrance request
 				 */
-						&& request.getRequestTime().minusHours(TEST_TIME_OFFSET).compareTo(configuration.getStartTime()) >= 0)
-						|| currentUser.get().getIsRemote()) {
-					// && request.getRequestTime().compareTo(configuration.getEndTime()) <= 0
+				if (!this.dailyRepository.existsByDateAndUserId(LocalDate.now(), currentUser.get().getId())) {
 
-					// start a new daily record
 					DailyRecord newDaily = new DailyRecord();
 
 					newDaily.setEntranceTime(LocalTime.now());
 
 					newDaily.setWorked(0d);
 
-					long delay = ChronoUnit.MINUTES.between(request.getRequestTime(), configuration.getStartTime());
+					newDaily.setBreaks(0);
 
-					if (delay > configuration.getMargin()) {
+					newDaily.setUser(currentUser.get());
 
-						newDaily.setDelay((double) delay);
-					}
-					currentUser.get().setIsOut(false);
+					newDaily.setDate(LocalDate.now());
+
+					newDaily.setLatestEntranceTime(newDaily.getEntranceTime());
+
+					Duration delayDuration = Duration.between(configuration.getStartTime(), LocalTime.now());
+
+					double entranceDelay = (double) delayDuration.getSeconds() / 60;
+
+					newDaily.setDelay(entranceDelay);
 
 					this.dailyRepository.save(newDaily);
 
 					this.userRepository.save(currentUser.get());
-
-					return new ResponseEntity<>(HttpStatus.OK);
 				}
 
-				return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+				if (delay > configuration.getMargin()) {
+
+					currentDaily.setDelay((double) delay);
+				}
+
+				currentUser.get().setIsOut(false);
+
+				currentDaily.setLatestEntranceTime(LocalTime.now());
+
+				/*
+				 * save all the changes
+				 */
+				this.dailyRepository.save(currentDaily);
+
+				this.userRepository.save(currentUser.get());
+
+				return new ResponseEntity<>(HttpStatus.OK);
 
 			} else {
-
+				System.out.println("else1");
 				return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 			}
-		} catch (Exception e) {
-
-			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+		} else {
+			System.out.println("else2");
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
+		// } catch (Exception e) {
+
+		// return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+		// }
 	}
 
 	@PostMapping("exit")
@@ -130,53 +159,63 @@ public class PresenceController {
 
 		double AcceptRaduis = configuration.getAcceptRaduis();
 
-		System.out.println("distance :" + distance);
+		if (request.getLocation() != null && currentUser.isPresent()) {
 
-		System.out.println("is out :" + currentUser.get().getIsOut());
+			LocalDate currentDate = LocalDate.now();
+			LocalTime currentTime = LocalTime.now();
 
-		System.out.println("time is :" + request.getRequestTime());
+			DailyRecord currentDaily = dailyRepository.findByDateAndUserId(currentDate, currentUser.get().getId());
 
-		System.out.println("is holiday :" + currentUser.get().getIsHoliday());
-		
-		System.out.println("request time :"+request.getRequestTime().minusHours(TEST_TIME_OFFSET) );
-		
-		System.out.println("end time :" +configuration.getEndTime());
+			if ((!currentUser.get().getIsHoliday() && !currentUser.get().getIsOut() && distance < AcceptRaduis
+					&& request.getRequestTime().minusHours(TEST_TIME_OFFSET).compareTo(configuration.getEndTime()) <= 0)
+					|| currentUser.get().getIsRemote()) {
 
-		System.out.println("time diffirence :" + request.getRequestTime().minusHours(TEST_TIME_OFFSET).compareTo(configuration.getEndTime()));
+				currentUser.get().setIsOut(true);
 
-		System.out.println("accept radius :" + AcceptRaduis);
+				if (request.getGolbalExit()) {
 
-		try {
-
-			if (request.getLocation() != null && currentUser.isPresent()) {
-
-				if ((!currentUser.get().getIsHoliday() && !currentUser.get().getIsOut() && distance < AcceptRaduis
-						&& request.getRequestTime().minusHours(TEST_TIME_OFFSET).compareTo(configuration.getEndTime()) >= 0)
-						|| currentUser.get().getIsRemote()) {
-
-					currentUser.get().setIsOut(true);
+					currentDaily.setExitTime(LocalTime.now());
 
 					this.userRepository.save(currentUser.get());
+
+					this.dailyRepository.save(currentDaily);
 
 					return new ResponseEntity<>(HttpStatus.OK);
 				}
 
-				return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+				currentDaily.setBreaks(currentDaily.getBreaks() + 1);
+
+				/*
+				 * we are going to need duration to calculate time in second hence in hours,
+				 * instead of "Period"
+				 */
+				Duration workedDuration = Duration.between(currentDaily.getLatestEntranceTime(), currentTime);
+
+				double worked = (double) workedDuration.getSeconds() / 60;
+
+				currentDaily.setWorked(worked + currentDaily.getWorked());
+
+				this.userRepository.save(currentUser.get());
+
+				this.dailyRepository.save(currentDaily);
+
+				return new ResponseEntity<>(HttpStatus.OK);
 
 			} else {
-
 				return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 			}
-		} catch (Exception e) {
-
-			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+		} else {
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
+		// } catch (Exception e) {
+
+		// return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+		// }
 	}
 
 	@PostMapping("location")
 	public ResponseEntity<?> declareExit(@RequestBody Location request) {
 
-		System.out.println("+++++++ " + userService.hasCreatedDaily(1l));
 		return null;
 	}
 

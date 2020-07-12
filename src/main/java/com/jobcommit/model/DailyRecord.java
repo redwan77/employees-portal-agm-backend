@@ -1,7 +1,6 @@
 package com.jobcommit.model;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Set;
 
@@ -24,14 +23,39 @@ public class DailyRecord {
 
 	private LocalTime entranceTime;
 	private LocalTime exitTime;
-	private LocalDate date ;
+	private LocalDate date;
+	private LocalTime latestEntranceTime;
+
+	private Integer breaks;
+	private Double Worked;
+	private Double delay;
+	private Double theorical;
+
 	@ManyToOne
 	@JoinColumn(name = "user")
 	@JsonIgnore
-	private User user ;
-	
-	
-	
+	private User user;
+
+	/*
+	 * ******** IF WE WANTED TO USER A ENUM INSTEAD OF VALUES FROM DB *******
+	 * 
+	 * @ElementCollection(targetClass = ExitReason.class)
+	 * 
+	 * @Enumerated(EnumType.STRING) // Possibly optional (I'm not sure) but defaults
+	 * to ORDINAL.
+	 * 
+	 * @CollectionTable(name = "daily_exitsReasons")
+	 * 
+	 * @Column(name = "reasons") // Column name in person_interest private
+	 * Set<ExitReason> exitReasons;
+	 */
+	@OneToMany
+	Set<ExitReason> exitReasons;
+
+	public DailyRecord() {
+		super();
+	}
+
 	public User getUser() {
 		return user;
 	}
@@ -47,29 +71,7 @@ public class DailyRecord {
 	public void setDate(LocalDate date) {
 		this.date = date;
 	}
- 
-	private Integer breaks;
-	private Double Worked;
-	private Double delay;
-	private Double theorical;
 
-	/*
-	 * 	************* IF WE WANTED TO USER A ENUM INSTEAD OF VALUES FROM DB ****************8
-	 * @ElementCollection(targetClass = ExitReason.class)
-	 * 
-	 * @Enumerated(EnumType.STRING) // Possibly optional (I'm not sure) but defaults
-	 * to ORDINAL.
-	 * 
-	 * @CollectionTable(name = "daily_exitsReasons")
-	 * 
-	 * @Column(name = "reasons") // Column name in person_interest private
-	 * Set<ExitReason> exitReasons;
-	 */
-
-	
-	@OneToMany
-	Set<ExitReason> exitReasons;
-	
 	public LocalTime getEntranceTime() {
 		return entranceTime;
 	}
@@ -78,21 +80,12 @@ public class DailyRecord {
 		this.entranceTime = entranceTime;
 	}
 
-	 
-
 	public LocalTime getExitTime() {
 		return exitTime;
 	}
 
 	public void setExitTime(LocalTime exitTime) {
 		this.exitTime = exitTime;
-	}
-
-	public DailyRecord() {
-		super();
-		// this.theorical = ConfigurationService.getTheoricalTime();
-		// presence and worked fields should be calculated in the default constructor so
-		// they always fetched updated
 	}
 
 	public Long getId() {
@@ -143,14 +136,19 @@ public class DailyRecord {
 		this.exitReasons = exitReasons;
 	}
 
+	public LocalTime getLatestEntranceTime() {
+		return latestEntranceTime;
+	}
+
+	public void setLatestEntranceTime(LocalTime latestEntranceTime) {
+		this.latestEntranceTime = latestEntranceTime;
+	}
+
 	@Override
 	public String toString() {
 		return "DailyRecord [id=" + id + ", entranceTime=" + entranceTime + ", exitTime=" + exitTime + ", date=" + date
 				+ ", breaks=" + breaks + ", Worked=" + Worked + ", delay=" + delay + ", theorical=" + theorical
 				+ ", exitReasons=" + exitReasons + "]";
 	}
-	
-	
-	
 
 }
