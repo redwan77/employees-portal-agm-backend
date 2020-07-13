@@ -12,6 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "absence_Requests")
@@ -26,10 +27,11 @@ public class AbsenceRequest {
 	private String reason;
 	private String description;
 	private Boolean isSettled;
+	private Boolean accepted ;
 
 	@ManyToOne
 	@JoinColumn(name = "user")
-	@JsonIgnore
+	@JsonIgnoreProperties({"dailyRecords","monthlyRecord","weeklyRecord"})
 	private User user;
 
 	public AbsenceRequest() {
@@ -100,5 +102,15 @@ public class AbsenceRequest {
 	public void setIsSettled(boolean isSettled) {
 		this.isSettled = isSettled;
 	}
+
+	public Boolean getAccepted() {
+		return accepted;
+	}
+
+	public void setAccepted(Boolean accepted) {
+		this.accepted = accepted;
+	}
+	
+	
 
 }

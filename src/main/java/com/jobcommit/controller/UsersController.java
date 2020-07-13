@@ -1,5 +1,7 @@
 package com.jobcommit.controller;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -22,8 +24,10 @@ import com.jobcommit.client_response.UserCreatedSuccess;
 import com.jobcommit.client_response.UserStatus;
 import com.jobcommit.dto.UserDTO;
 import com.jobcommit.dto.WorkModeConfigurationDTO;
+import com.jobcommit.model.DailyRecord;
 import com.jobcommit.model.Role;
 import com.jobcommit.model.User;
+import com.jobcommit.repository.DailyRecordRepository;
 import com.jobcommit.repository.UserRepository;
 import com.jobcommit.security.CustomSecurityAthenticationProvider;
 
@@ -36,9 +40,12 @@ public class UsersController {
 	@Autowired
 	public UserRepository userRepository;
 
+	@Autowired
+	public DailyRecordRepository dailyrecordRepository;
+
 	@PostMapping("addEmployee")
 	public ResponseEntity<?> addEmployee(@RequestBody UserDTO body) {
-		
+
 		User user = new User();
 		user.setAdress(body.getAdress());
 		user.setRole(Role.EMPLOYEE);
@@ -68,25 +75,32 @@ public class UsersController {
 	@GetMapping("allEmployees")
 	public ResponseEntity<?> gettAllEmployees() {
 
-		List<User> employees = this.userRepository.findAll().stream()
-				.filter(empl -> empl.getRole().equals(Role.EMPLOYEE)).collect(Collectors.toList());
+		List<User> employees = this.userRepository.findAll();
 
-		List<UserDTO> response = new ArrayList<UserDTO>();
-		employees.forEach(empl -> {
-			UserDTO dto = new UserDTO();
-			dto.setEmail(empl.getEmail());
-			dto.setId(empl.getId());
-			dto.setName(empl.getName());
-			dto.setLastName(empl.getLastName());
-			dto.setPhoneNumber(empl.getPhoneNumber());
+		if (!employees.isEmpty()) {
+			System.out.println();
+			employees = employees.stream().filter(empl -> empl.getRole().equals(Role.EMPLOYEE))
+					.collect(Collectors.toList());
 
-			dto.setIsHoliday(empl.getIsHoliday());
-			dto.setIsRemote(empl.getIsRemote());
-			response.add(dto);
-			System.out.println(
-					"the current loged in user is :" + CustomSecurityAthenticationProvider.userDetails.getName());
-		});
-		return new ResponseEntity<>(response, HttpStatus.OK);
+			List<UserDTO> response = new ArrayList<UserDTO>();
+			employees.forEach(empl -> {
+				UserDTO dto = new UserDTO();
+				dto.setEmail(empl.getEmail());
+				dto.setId(empl.getId());
+				dto.setName(empl.getName());
+				dto.setLastName(empl.getLastName());
+				dto.setPhoneNumber(empl.getPhoneNumber());
+
+				dto.setIsHoliday(empl.getIsHoliday());
+				dto.setIsRemote(empl.getIsRemote());
+				response.add(dto);
+				System.out.println(
+						"the current loged in user is :" + CustomSecurityAthenticationProvider.userDetails.getName());
+			});
+			return new ResponseEntity<>(response, HttpStatus.OK);
+		} else {
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
 
 	}
 
@@ -127,6 +141,8 @@ public class UsersController {
 
 	@GetMapping("all")
 	public List<User> all() {
+		List<User> employees = this.userRepository.findAll().stream()
+				.filter(empl -> empl.getRole().equals(Role.EMPLOYEE)).collect(Collectors.toList());
 		return this.userRepository.findAll();
 	}
 
@@ -145,6 +161,29 @@ public class UsersController {
 		} catch (Exception e) {
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
+	}
+
+	@GetMapping("allEmployeeStatus")
+	public ResponseEntity<?> getAllEmployeeStatus() {
+		List<User> employees = this.userRepository.findAll().stream()
+				.filter(empl -> empl.getRole().equals(Role.EMPLOYEE)).collect(Collectors.toList());
+		List<UserDTO> dtos = employees.stream().map(this::convertUserToUserDTO).collect(Collectors.toList());
+		System.out.println("haha");
+		return new ResponseEntity<>(dtos, HttpStatus.OK);
+	}
+
+	public UserDTO convertUserToUserDTO(User user) {
+
+		UserDTO dto = new UserDTO();
+		dto.setName(user.getName());
+		dto.setLastName(user.getLastName());
+		dto.setIsOut(user.getIsOut());
+		LocalDate today = LocalDate.now();
+		System.out.println(today);
+		DailyRecord daily = this.dailyrecordRepository.findByDateAndUserId(today, user.getId());
+		dto.setEntered(daily != null ? daily.getEntranceTime() : null);
+		dto.setWorked(daily != null ? daily.getWorked() : null);
+		return dto;
 	}
 
 	public String alphaNumericString(int len) {

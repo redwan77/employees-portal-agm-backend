@@ -140,6 +140,8 @@ public class PresenceController {
 						newDelay.setIsSatteled(null);
 
 						newDelay.setVerified(null);
+						
+						newDelay.setDate(LocalDate.now());
 
 						delayRepository.save(newDelay);
 					}
