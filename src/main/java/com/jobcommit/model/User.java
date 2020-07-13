@@ -26,6 +26,7 @@ public class User {
 	private boolean isRemote;
 	private boolean isHoliday;
 	private boolean isOut;
+	
 
 	// security
 	private String login;
@@ -171,5 +172,7 @@ public class User {
 	public void setIsOut(boolean isOut) {
 		this.isOut = isOut;
 	}
+
+	
 
 }

@@ -16,9 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.jobcommit.model.CompanyConfiguration;
 import com.jobcommit.model.DailyRecord;
+import com.jobcommit.model.Delay;
 import com.jobcommit.model.User;
 import com.jobcommit.repository.ConfigurationRepository;
 import com.jobcommit.repository.DailyRecordRepository;
+import com.jobcommit.repository.DelayRepository;
 import com.jobcommit.repository.UserRepository;
 import com.jobcommit.security.CustomSecurityAthenticationProvider;
 import com.jobcommit.service.UserService;
@@ -26,8 +28,6 @@ import com.jobcommit.user_requests.EntranceRequest;
 import com.jobcommit.user_requests.ExitRequest;
 import com.jobcommit.user_requests.Location;
 import com.jobcommit.utils.GeolocalizationUtils;
-
-import net.bytebuddy.asm.Advice.Local;
 
 @RestController
 @RequestMapping("presence")
@@ -44,6 +44,9 @@ public class PresenceController {
 
 	@Autowired
 	private UserService userService;
+
+	@Autowired
+	private DelayRepository delayRepository;
 
 	private final int TEST_TIME_OFFSET = 0;
 
@@ -67,26 +70,29 @@ public class PresenceController {
 
 			LocalDate currentDate = LocalDate.now();
 
-			DailyRecord currentDaily = dailyRepository.findByDateAndUserId(currentDate, currentUser.get().getId());
-			LocalTime exit = (currentDaily.getExitTime());
-			System.out.println((currentDaily.getExitTime() != null)+ "   result" );
+			// LocalTime exit = (currentDaily.getExitTime());
 
-			if ((distance < AcceptRaduis && currentUser.get().getIsOut() && !currentUser.get().getIsHoliday()
-			/*
-			 * WARNING : ADDED 3 HOURES DIFFIRENCE FOR TESTING PERPUSES
-			 */
-					&& request.getRequestTime().minusHours(TEST_TIME_OFFSET)
-							.compareTo(configuration.getStartTime()) >= 0
-					&& currentDaily.getExitTime() == null) || currentUser.get().getIsRemote()) {
-				// && request.getRequestTime().compareTo(configuration.getEndTime()) <= 0
+			// simple conditions
+			boolean distanceCondition = distance < AcceptRaduis;
 
-				long delay = ChronoUnit.MINUTES.between(request.getRequestTime(), configuration.getStartTime());
+			boolean isNotOutNietherInHoliday = currentUser.get().getIsOut() && !currentUser.get().getIsHoliday();
 
-				/*
-				 * make sure that the daily record is successfully created if this was the first
-				 * entrance request
-				 */
-				if (!this.dailyRepository.existsByDateAndUserId(LocalDate.now(), currentUser.get().getId())) {
+			boolean timeCondition = request.getRequestTime().minusHours(TEST_TIME_OFFSET)
+					.compareTo(configuration.getStartTime()) >= 0
+					&& request.getRequestTime().compareTo(configuration.getEndTime()) <= 0;
+
+			boolean isNotRemote = currentUser.get().getIsRemote();
+
+			if ((distanceCondition && isNotOutNietherInHoliday && timeCondition) || isNotRemote) {
+				//
+
+				DailyRecord currentDaily = dailyRepository.findByDateAndUserId(currentDate, currentUser.get().getId());
+
+				long delay = ChronoUnit.MINUTES.between(configuration.getStartTime(), request.getRequestTime());
+
+				System.out.println("delay :" + delay);
+
+				if (currentDaily == null) {
 
 					DailyRecord newDaily = new DailyRecord();
 
@@ -97,6 +103,8 @@ public class PresenceController {
 					newDaily.setBreaks(0);
 
 					newDaily.setUser(currentUser.get());
+
+					newDaily.setEntranceTime(LocalTime.now());
 
 					newDaily.setDate(LocalDate.now());
 
@@ -111,16 +119,37 @@ public class PresenceController {
 					this.dailyRepository.save(newDaily);
 
 					this.userRepository.save(currentUser.get());
-				}
 
-				if (delay > configuration.getMargin()) {
+					currentDaily = dailyRepository.findByDateAndUserId(currentDate, currentUser.get().getId());
 
-					currentDaily.setDelay((double) delay);
+					// create the delay at the entrance moment
+					if (delay > configuration.getMargin()) {
+
+						currentDaily.setDelay((double) delay);
+
+						Delay newDelay = new Delay();
+
+						newDelay.setDuration(delay);
+
+						newDelay.setUser(currentUser.get());
+
+						newDelay.setEnd(LocalTime.now());
+
+						newDelay.setStart(configuration.getStartTime());
+
+						newDelay.setIsSatteled(null);
+
+						newDelay.setVerified(null);
+
+						delayRepository.save(newDelay);
+					}
 				}
 
 				currentUser.get().setIsOut(false);
 
 				currentDaily.setLatestEntranceTime(LocalTime.now());
+
+				currentDaily.setBreaks(currentDaily.getBreaks() + 1);
 
 				/*
 				 * save all the changes
