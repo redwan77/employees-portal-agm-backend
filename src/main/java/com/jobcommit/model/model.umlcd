@@ -1,0 +1,1881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_40KvsMlLEeqWaYLM-o8V5w">
+  <modelElement href="backend-job-commit.uml#_wPubsMlGEeqWaYLM-o8V5w"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4-gXcMlLEeqWaYLM-o8V5w" target="_4-kB2clLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8T04MlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CCMkMlLEeqWaYLM-o8V5w" position="250.0,250.0"/>
+    <nameVisual xmi:id="_4-gXcclLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_4-gXcslLEeqWaYLM-o8V5w" aggregationKind="NONE" name="absenceDate" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w2zCwMlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4-gXc8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-gXdMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4-gXdclLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8T04clGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4-gXdslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-gXd8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4-hlkMlLEeqWaYLM-o8V5w" target="_4-kB2clLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8Ub8MlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CCzoMlLEeqWaYLM-o8V5w" position="270.0,270.0"/>
+    <nameVisual xmi:id="_4-hlkclLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_4-hlkslLEeqWaYLM-o8V5w" aggregationKind="NONE" name="absenceStart" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w20Q4clGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4-hlk8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-hllMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4-hllclLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8VDAMlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4-hllslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-hll8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4-iMoMlLEeqWaYLM-o8V5w" target="_4-kB2clLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8VDAclGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CCzoclLEeqWaYLM-o8V5w" position="290.0,290.0"/>
+    <nameVisual xmi:id="_4-iMoclLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_4-iMoslLEeqWaYLM-o8V5w" aggregationKind="NONE" name="absenceEnd" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w21fAclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4-iMo8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-iMpMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4-iMpclLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8VDAslGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4-iMpslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-iMp8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4-kB0MlLEeqWaYLM-o8V5w" sourceAnchor="258.0,153.0" targetAnchor="0.0,202.0" target="_5BgoKclLEeqWaYLM-o8V5w" source="_4-kB2clLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w9QQEMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CITMclLEeqWaYLM-o8V5w" position="550.0,550.0"/>
+    <stereotypes xmi:id="_4-kB0clLEeqWaYLM-o8V5w" name="Reference">
+      <modelElement href="backend-job-commit.uml#_w9zpsMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_4-kB0slLEeqWaYLM-o8V5w" text="">
+      <visualProperties xmi:id="_5WgAsMlLEeqWaYLM-o8V5w" position="-3.3333333333332575,-18.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_4-kB08lLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w9QQEclGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5WdkcslLEeqWaYLM-o8V5w" position="1.0,-46.5"/>
+      <visibility xmi:id="_4-kB1MlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-kB1clLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4-kB1slLEeqWaYLM-o8V5w" aggregationKind="NONE" name="user" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w3AeIMlGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5WgnwMlLEeqWaYLM-o8V5w" position="-37.33333333333326,2.5"/>
+      <visibility xmi:id="_4-kB18lLEeqWaYLM-o8V5w" label="-"/>
+      <cardinality xmi:id="_4-kB2MlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4-xdMMlLEeqWaYLM-o8V5w" target="_4_G0YMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8W4MMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CCzoslLEeqWaYLM-o8V5w" position="310.0,310.0"/>
+    <nameVisual xmi:id="_4-28wMlLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_4-3j0MlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="dateDay" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w3KPIMlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4-71QMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-7OMMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4-3j0clLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8W4MclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4--RgMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-71QslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4-z5cMlLEeqWaYLM-o8V5w" target="_4_G0YMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8XfQMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CDasMlLEeqWaYLM-o8V5w" position="330.0,330.0"/>
+    <nameVisual xmi:id="_4-3j0slLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_4-3j08lLEeqWaYLM-o8V5w" aggregationKind="NONE" name="start" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w3K2MclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4--4kclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4--4kMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4-4K4MlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8XfQclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4-_foclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-_foMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4-z5cclLEeqWaYLM-o8V5w" target="_4_G0YMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8XfQslGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CDasclLEeqWaYLM-o8V5w" position="350.0,350.0"/>
+    <nameVisual xmi:id="_4-4K4clLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_4-4K4slLEeqWaYLM-o8V5w" aggregationKind="NONE" name="end" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w3LdQclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4-_fo8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-_foslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4-6AEMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8YGUMlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_AtwMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_AGsMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4-z5cslLEeqWaYLM-o8V5w" sourceAnchor="146.0,192.0" targetAnchor="0.0,3.0" target="_5BgoKclLEeqWaYLM-o8V5w" source="_4_G0YMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w90QwMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CI6QMlLEeqWaYLM-o8V5w" position="570.0,570.0"/>
+    <bendpoints xmi:id="_5WbIMMlLEeqWaYLM-o8V5w" sourceY="50" targetX="-555"/>
+    <stereotypes xmi:id="_4-6nIMlLEeqWaYLM-o8V5w" name="Reference">
+      <modelElement href="backend-job-commit.uml#_w-YRcMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_4-6AEclLEeqWaYLM-o8V5w" text="">
+      <visualProperties xmi:id="_5Wk5MMlLEeqWaYLM-o8V5w" position="259.33333333333337,-19.000000000000092"/>
+    </nameVisual>
+    <sourceRole xmi:id="_4-6AEslLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w90QwclGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5WjrEMlLEeqWaYLM-o8V5w" position="1.0,3.0"/>
+      <visibility xmi:id="_4_AtwslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_AtwclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4-6AE8lLEeqWaYLM-o8V5w" aggregationKind="NONE" name="user" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w37EIMlGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5WlgQMlLEeqWaYLM-o8V5w" position="-37.33333333333326,1.9999999999999432"/>
+      <visibility xmi:id="_4_AtxMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_Atw8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4_P-UMlLEeqWaYLM-o8V5w" target="_4_a9cMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8ZUcMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CDasslLEeqWaYLM-o8V5w" position="370.0,370.0"/>
+    <nameVisual xmi:id="_4_WE8MlLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_4_WsAMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="startTime" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w4GqUMlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_X6IclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_X6IMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4_WsAclLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8ZUcclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_YhMslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_YhMclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4_P-UclLEeqWaYLM-o8V5w" target="_4_a9cMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8Z7gMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CEo0MlLEeqWaYLM-o8V5w" position="390.0,390.0"/>
+    <nameVisual xmi:id="_4_WsAslLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_4_WsA8lLEeqWaYLM-o8V5w" aggregationKind="NONE" name="endTime" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w4HRYMlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_YhNMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_YhM8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4_WsBMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8Z7gclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_ZIQslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_ZIQclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4_q1EMlLEeqWaYLM-o8V5w" sourceAnchor="290.0,292.0" targetAnchor="126.0,0.0" target="_5AEdsMlLEeqWaYLM-o8V5w" source="_5BgoKclLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_xAKaIMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CJhUMlLEeqWaYLM-o8V5w" position="670.0,670.0"/>
+    <bendpoints xmi:id="_5Wc9YMlLEeqWaYLM-o8V5w" sourceX="189" targetY="-168"/>
+    <stereotypes xmi:id="_4_z_AclLEeqWaYLM-o8V5w" name="Reference">
+      <modelElement href="backend-job-commit.uml#_xAX1gMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_4_zX8MlLEeqWaYLM-o8V5w" text="">
+      <visualProperties xmi:id="_5WwfYMlLEeqWaYLM-o8V5w" position="-38.0,41.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_4_zX8clLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_xAKaIclGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5WvRQMlLEeqWaYLM-o8V5w" position="1.6666666666667425,-46.5"/>
+      <visibility xmi:id="_4_43gMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_4QcMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4_z_AMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="dailyRecords" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w6pA8MlGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5WxGcMlLEeqWaYLM-o8V5w" position="-84.0,-46.0"/>
+      <stereotypes xmi:id="_4_43g8lLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w6q2IMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4_43hMlLEeqWaYLM-o8V5w" name="Annotations">
+        <modelElement href="backend-job-commit.uml#_w6q2IclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_43gslLEeqWaYLM-o8V5w" label="~"/>
+      <cardinality xmi:id="_4_43gclLEeqWaYLM-o8V5w" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4_rcIMlLEeqWaYLM-o8V5w" target="_5AEdsMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8bJoMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CEo0clLEeqWaYLM-o8V5w" position="410.0,410.0"/>
+    <nameVisual xmi:id="_4_z_AslLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_4_0mEMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="entranceTime" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w4mZkMlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_5ekclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_5ekMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4_0mEclLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8bJoclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_6FoclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_6FoMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4_rcIclLEeqWaYLM-o8V5w" target="_5AEdsMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8bwsMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CFP4MlLEeqWaYLM-o8V5w" position="430.0,430.0"/>
+    <nameVisual xmi:id="_4_0mEslLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_4_0mE8lLEeqWaYLM-o8V5w" aggregationKind="NONE" name="exitTime" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w4nAoMlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_6Fo8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_6FoslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4_1NIMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8bwsclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_6ssslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_6ssclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4_sDMMlLEeqWaYLM-o8V5w" target="_5AEdsMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8bwsslGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CFP4clLEeqWaYLM-o8V5w" position="450.0,450.0"/>
+    <nameVisual xmi:id="_4_1NIclLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_4_1NIslLEeqWaYLM-o8V5w" aggregationKind="NONE" name="date" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w4nAoslGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_6stMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_6ss8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4_1NI8lLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8eM8MlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_7TwslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_7TwclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4_sDMclLEeqWaYLM-o8V5w" target="_5AEdsMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8eM8clGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CFP4slLEeqWaYLM-o8V5w" position="470.0,470.0"/>
+    <nameVisual xmi:id="_4_1NJMlLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_4_10MMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="latestEntranceTime" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w4nnsclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_760MlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_7Tw8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4_10MclLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8eM8slGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_4_8h4clLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_8h4MlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4_sDMslLEeqWaYLM-o8V5w" sourceAnchor="0.0,145.0" targetAnchor="145.0,405.0" target="_5BgoKclLEeqWaYLM-o8V5w" source="_5AEdsMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w-YRcclGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CI6QclLEeqWaYLM-o8V5w" position="590.0,590.0"/>
+    <bendpoints xmi:id="_5WbIMclLEeqWaYLM-o8V5w" sourceX="-208" targetY="200"/>
+    <stereotypes xmi:id="_4_2bQclLEeqWaYLM-o8V5w" name="Reference">
+      <modelElement href="backend-job-commit.uml#_w-u2wMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_4_10MslLEeqWaYLM-o8V5w" text="">
+      <visualProperties xmi:id="_5Wn8gMlLEeqWaYLM-o8V5w" position="1.6666666666667425,-57.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_4_10M8lLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w-YRcslGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5WmuYMlLEeqWaYLM-o8V5w" position="-15.833333333333258,2.5"/>
+      <visibility xmi:id="_4_9I8MlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_8h4slLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4_2bQMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="user" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w4qrAclGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5Wn8gclLEeqWaYLM-o8V5w" position="2.6666666666667425,1.0"/>
+      <visibility xmi:id="_4_9I8slLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_9I8clLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5ADPkMlLEeqWaYLM-o8V5w" sourceAnchor="245.0,145.0" targetAnchor="198.0,51.0" target="_5AcRIMlLEeqWaYLM-o8V5w" source="_5AEdsMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w-u2wclGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CI6QslLEeqWaYLM-o8V5w" position="610.0,610.0"/>
+    <bendpoints xmi:id="_5WbvQMlLEeqWaYLM-o8V5w" sourceX="610" targetX="45" targetY="1120"/>
+    <bendpoints xmi:id="_5WbvQclLEeqWaYLM-o8V5w" sourceX="610" sourceY="-1120" targetX="45"/>
+    <stereotypes xmi:id="_5ADPkclLEeqWaYLM-o8V5w" name="Reference">
+      <modelElement href="backend-job-commit.uml#_w--HUMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5ADPkslLEeqWaYLM-o8V5w" text="">
+      <visualProperties xmi:id="_5WpxsMlLEeqWaYLM-o8V5w" position="2.0,-69.72222222222217"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5ADPk8lLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w-u2wslGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5WpKoMlLEeqWaYLM-o8V5w" position="1.1666666666667425,-46.5"/>
+      <visibility xmi:id="_5ADPlMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5ADPlclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5ADPlslLEeqWaYLM-o8V5w" aggregationKind="NONE" name="exitReasons" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w4uVYMlGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5WqYwMlLEeqWaYLM-o8V5w" position="47.00000000000023,0.5000000000002274"/>
+      <visibility xmi:id="_5ADPl8lLEeqWaYLM-o8V5w" label="~"/>
+      <cardinality xmi:id="_5ADPmMlLEeqWaYLM-o8V5w" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5AiXwMlLEeqWaYLM-o8V5w" sourceAnchor="115.0,405.0" targetAnchor="248.0,98.0" target="_5Aq6oMlLEeqWaYLM-o8V5w" source="_5BgoKclLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_xAX1gclGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CKIYMlLEeqWaYLM-o8V5w" position="690.0,690.0"/>
+    <bendpoints xmi:id="_5Wc9YclLEeqWaYLM-o8V5w" sourceY="153" targetX="197"/>
+    <stereotypes xmi:id="_5AmpMslLEeqWaYLM-o8V5w" name="Reference">
+      <modelElement href="backend-job-commit.uml#_xArXgMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5AmCIMlLEeqWaYLM-o8V5w" text="">
+      <visualProperties xmi:id="_5Wy7oMlLEeqWaYLM-o8V5w" position="-77.33333333333326,-18.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5AmpMMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_xAX1gslGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5WxtgMlLEeqWaYLM-o8V5w" position="2.6666666666667425,1.0"/>
+      <visibility xmi:id="_5An3UclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5An3UMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5AmpMclLEeqWaYLM-o8V5w" aggregationKind="NONE" name="monthlyRecord" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w6sEQclGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5Wy7oclLEeqWaYLM-o8V5w" position="1.6666666666667425,-47.0"/>
+      <stereotypes xmi:id="_5AoeYMlLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w6srUclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5AoeYclLEeqWaYLM-o8V5w" name="Annotations">
+        <modelElement href="backend-job-commit.uml#_w6tSYMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5An3U8lLEeqWaYLM-o8V5w" label="~"/>
+      <cardinality xmi:id="_5An3UslLEeqWaYLM-o8V5w" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5AiXwclLEeqWaYLM-o8V5w" sourceAnchor="124.0,0.0" targetAnchor="0.0,332.0" target="_5BgoKclLEeqWaYLM-o8V5w" source="_5Aq6oMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w--uYMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CI6Q8lLEeqWaYLM-o8V5w" position="630.0,630.0"/>
+    <bendpoints xmi:id="_5WbvQslLEeqWaYLM-o8V5w" sourceY="-128" targetX="-206"/>
+    <stereotypes xmi:id="_5AnQQclLEeqWaYLM-o8V5w" name="Reference">
+      <modelElement href="backend-job-commit.uml#_w_mZcMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5AmpM8lLEeqWaYLM-o8V5w" text="">
+      <visualProperties xmi:id="_5WsN8MlLEeqWaYLM-o8V5w" position="41.66666666666677,1.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5AmpNMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w--uYclGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5Wrm4MlLEeqWaYLM-o8V5w" position="-16.333333333333258,-46.0"/>
+      <visibility xmi:id="_5AoeY8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AoeYslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5AnQQMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="user" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w5NdkclGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5Ws1AMlLEeqWaYLM-o8V5w" position="-37.33333333333326,2.000000000000057"/>
+      <visibility xmi:id="_5ApFcclLEeqWaYLM-o8V5w" label="-"/>
+      <cardinality xmi:id="_5ApFcMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5A1SsMlLEeqWaYLM-o8V5w" target="_5BA44MlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8gpMMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CF28MlLEeqWaYLM-o8V5w" position="490.0,490.0"/>
+    <nameVisual xmi:id="_5A49EMlLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_5A49EclLEeqWaYLM-o8V5w" aggregationKind="NONE" name="start" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w5a48MlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_5A7ZUMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5A6yQMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5A5kIMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8gpMclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_5A8AYslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5A8AYclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5A15wMlLEeqWaYLM-o8V5w" target="_5BA44MlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8hQQMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CGeAMlLEeqWaYLM-o8V5w" position="510.0,510.0"/>
+    <nameVisual xmi:id="_5A5kIclLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_5A5kIslLEeqWaYLM-o8V5w" aggregationKind="NONE" name="end" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w5cHEMlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_5A8AZMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5A8AY8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5A5kI8lLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8hQQclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_5A8ncslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5A8ncclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5A15wclLEeqWaYLM-o8V5w" target="_5BA44MlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w8h3UMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CITMMlLEeqWaYLM-o8V5w" position="530.0,530.0"/>
+    <nameVisual xmi:id="_5A5kJMlLEeqWaYLM-o8V5w" text=""/>
+    <sourceRole xmi:id="_5A5kJclLEeqWaYLM-o8V5w" aggregationKind="NONE" name="date" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w5dVMclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_5A9OgMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5A8nc8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5A6LMMlLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w8h3UclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_5A9Og8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5A9OgslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5A15wslLEeqWaYLM-o8V5w" sourceAnchor="170.0,177.0" targetAnchor="115.0,0.0" target="_5BgoKclLEeqWaYLM-o8V5w" source="_5BA44MlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_w_mZcclGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CI6RMlLEeqWaYLM-o8V5w" position="650.0,650.0"/>
+    <bendpoints xmi:id="_5WcWUMlLEeqWaYLM-o8V5w" sourceX="285" targetY="-104"/>
+    <stereotypes xmi:id="_5A6LNMlLEeqWaYLM-o8V5w" name="Reference">
+      <modelElement href="backend-job-commit.uml#_xAJzEMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5A6LMclLEeqWaYLM-o8V5w" text="">
+      <visualProperties xmi:id="_5WuqMMlLEeqWaYLM-o8V5w" position="-37.33333333333326,1.999999999999929"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5A6LMslLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_w_mZcslGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5WtcEMlLEeqWaYLM-o8V5w" position="1.0,-47.0"/>
+      <visibility xmi:id="_5A91kMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5A9OhMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5A6LM8lLEeqWaYLM-o8V5w" aggregationKind="NONE" name="user" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w5kC4MlGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5WuqMclLEeqWaYLM-o8V5w" position="-37.33333333333326,-62.9999999999998"/>
+      <visibility xmi:id="_5A91kslLEeqWaYLM-o8V5w" label="-"/>
+      <cardinality xmi:id="_5A91kclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5BeL4MlLEeqWaYLM-o8V5w" sourceAnchor="147.0,0.0" targetAnchor="290.0,172.0" target="_5BgoKclLEeqWaYLM-o8V5w" source="_5B7e4MlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_xA4y4clGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CKvcclLEeqWaYLM-o8V5w" position="730.0,730.0"/>
+    <bendpoints xmi:id="_5WdkcclLEeqWaYLM-o8V5w" sourceY="-288" targetX="533"/>
+    <stereotypes xmi:id="_5BeL4clLEeqWaYLM-o8V5w" name="Reference">
+      <modelElement href="backend-job-commit.uml#_xBMU4MlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5BeL4slLEeqWaYLM-o8V5w" text="">
+      <visualProperties xmi:id="_5W3NEMlLEeqWaYLM-o8V5w" position="-303.33333333333314,2.499999999999943"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5BeL48lLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_xA4y4slGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5W1-8MlLEeqWaYLM-o8V5w" position="-16.333333333333258,-46.0"/>
+      <visibility xmi:id="_5BeL5MlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BeL5clLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5BeL5slLEeqWaYLM-o8V5w" aggregationKind="NONE" name="user" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w63DYMlGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5W3NEclLEeqWaYLM-o8V5w" position="39.66666666666674,-46.50000000000006"/>
+      <stereotypes xmi:id="_5BeL58lLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w63DYclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5BeL6MlLEeqWaYLM-o8V5w" name="Annotations">
+        <modelElement href="backend-job-commit.uml#_w65foMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BeL6clLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BeL6slLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5BgoIMlLEeqWaYLM-o8V5w" sourceAnchor="290.0,202.0" targetAnchor="117.0,0.0" target="_5B7e4MlLEeqWaYLM-o8V5w" source="_5BgoKclLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_xArXgclGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5CKvcMlLEeqWaYLM-o8V5w" position="710.0,710.0"/>
+    <bendpoints xmi:id="_5WdkcMlLEeqWaYLM-o8V5w" sourceX="503" targetY="-258"/>
+    <stereotypes xmi:id="_5BgoIclLEeqWaYLM-o8V5w" name="Reference">
+      <modelElement href="backend-job-commit.uml#_xA4y4MlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5BgoIslLEeqWaYLM-o8V5w" text="">
+      <visualProperties xmi:id="_5W0w0MlLEeqWaYLM-o8V5w" position="-38.33333333333326,120.75000000000011"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5BgoI8lLEeqWaYLM-o8V5w" aggregationKind="NONE" name="">
+      <modelElement href="backend-job-commit.uml#_xArXgslGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5W0JwMlLEeqWaYLM-o8V5w" position="1.6666666666667425,-46.5"/>
+      <visibility xmi:id="_5BgoJMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BgoJclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5BgoJslLEeqWaYLM-o8V5w" aggregationKind="NONE" name="weeklyRecord" navigable="true">
+      <modelElement href="backend-job-commit.uml#_w6t5cMlGEeqWaYLM-o8V5w"/>
+      <visualProperties xmi:id="_5W1X4MlLEeqWaYLM-o8V5w" position="-89.33333333333326,-46.0"/>
+      <visibility xmi:id="_5BgoJ8lLEeqWaYLM-o8V5w" label="~"/>
+      <cardinality xmi:id="_5BgoKMlLEeqWaYLM-o8V5w" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_4-kB2clLEeqWaYLM-o8V5w" name="AbsenceRequest" associationsIn="_4-gXcMlLEeqWaYLM-o8V5w _4-hlkMlLEeqWaYLM-o8V5w _4-iMoMlLEeqWaYLM-o8V5w" associationsOut="_4-kB0MlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_wW9FEMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_4-kB2slLEeqWaYLM-o8V5w" position="93.0,1154.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_4-kB28lLEeqWaYLM-o8V5w" name="Table">
+      <modelElement href="backend-job-commit.uml#_wXR1MMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <stereotypes xmi:id="_4-kB3MlLEeqWaYLM-o8V5w" name="JPA1StyledElement">
+      <modelElement href="backend-job-commit.uml#_wXZxAMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <visibility xmi:id="_4-kB3clLEeqWaYLM-o8V5w" label="+"/>
+    <attributes xmi:id="_4-kB3slLEeqWaYLM-o8V5w" name="id">
+      <modelElement href="backend-job-commit.uml#_w2lnYMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4-kB38lLEeqWaYLM-o8V5w" name="PrimaryKey">
+        <modelElement href="backend-job-commit.uml#_w2mOcMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4-kB4MlLEeqWaYLM-o8V5w" name="GeneratedValueMapping">
+        <modelElement href="backend-job-commit.uml#_w2m1gMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4-kB4clLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-kB4slLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4-kB48lLEeqWaYLM-o8V5w" name="Long">
+        <modelElement href="backend-job-commit.uml#_wzDLMclGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4-kB5MlLEeqWaYLM-o8V5w" name="absenceDate">
+      <modelElement href="backend-job-commit.uml#_w2zCwMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4-kB5clLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w20Q4MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4-kB5slLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-kB58lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4-kB6MlLEeqWaYLM-o8V5w" name="LocalDate">
+        <modelElement href="backend-job-commit.uml#_wo1fQMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4-kB6clLEeqWaYLM-o8V5w" name="absenceStart">
+      <modelElement href="backend-job-commit.uml#_w20Q4clGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4-kB6slLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w21fAMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4-kB68lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-kB7MlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4-kB7clLEeqWaYLM-o8V5w" name="LocalTime">
+        <modelElement href="backend-job-commit.uml#_wppXkMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4-kB7slLEeqWaYLM-o8V5w" name="absenceEnd">
+      <modelElement href="backend-job-commit.uml#_w21fAclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4-kB78lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w22GEMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4-kB8MlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-kB8clLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4-kB8slLEeqWaYLM-o8V5w" name="LocalTime">
+        <modelElement href="backend-job-commit.uml#_wppXkMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4-kB88lLEeqWaYLM-o8V5w" name="reason">
+      <modelElement href="backend-job-commit.uml#_w22GEclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4-kB9MlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w22tIMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4-kB9clLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-kB9slLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4-kB98lLEeqWaYLM-o8V5w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4-kB-MlLEeqWaYLM-o8V5w" name="description">
+      <modelElement href="backend-job-commit.uml#_w23UMMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4-kB-clLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w237QMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4-kB-slLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-kB-8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4-kB_MlLEeqWaYLM-o8V5w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4-kB_clLEeqWaYLM-o8V5w" name="isSettled">
+      <modelElement href="backend-job-commit.uml#_w237QclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4-kB_slLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w24iUMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4-kB_8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-kCAMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4-kCAclLEeqWaYLM-o8V5w" name="Boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4-kCAslLEeqWaYLM-o8V5w" name="accepted">
+      <modelElement href="backend-job-commit.uml#_w29a0MlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4-kCA8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w2_3EMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4-kCBMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-kCBclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4-kCBslLEeqWaYLM-o8V5w" name="Boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4-kCB8lLEeqWaYLM-o8V5w" name="user">
+      <modelElement href="backend-job-commit.uml#_w3AeIMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4-kCCMlLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w3BFMMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4-kCCclLEeqWaYLM-o8V5w" name="Annotations">
+        <modelElement href="backend-job-commit.uml#_w3BsQMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4-kCCslLEeqWaYLM-o8V5w" label="-"/>
+      <cardinality xmi:id="_4-kCC8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4-kCDMlLEeqWaYLM-o8V5w" name="User">
+        <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_4-kCDclLEeqWaYLM-o8V5w" name="AbsenceRequest">
+      <modelElement href="backend-job-commit.uml#_wYJX4MlGEeqWaYLM-o8V5w"/>
+      <keywords xmi:id="_4-kCDslLEeqWaYLM-o8V5w" keyword="create"/>
+      <stereotypes xmi:id="_4-kCD8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wYUXAMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4-kCEMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-kCEclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4-kCEslLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wYTv8MlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_4-kCE8lLEeqWaYLM-o8V5w" name="AbsenceRequest">
+          <modelElement href="backend-job-commit.uml#_wW9FEMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_4-kCFMlLEeqWaYLM-o8V5w" name="getUser">
+      <modelElement href="backend-job-commit.uml#_wYU-EMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4-kCFclLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wYVlIMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4-kCFslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-kCF8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4-kCGMlLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wuW4cMlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_4-kCGclLEeqWaYLM-o8V5w" name="User">
+          <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_4-kCGslLEeqWaYLM-o8V5w" name="setUser">
+      <modelElement href="backend-job-commit.uml#_wuXfgMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4-kCG8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wubw8MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4-kCHMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4-kCHclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_4-kCHslLEeqWaYLM-o8V5w" name="user">
+        <modelElement href="backend-job-commit.uml#_wuXfgclGEeqWaYLM-o8V5w"/>
+        <cardinality xmi:id="_4-kCH8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+        <type xmi:id="_4-kCIMlLEeqWaYLM-o8V5w" name="User">
+          <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_4_G0YMlLEeqWaYLM-o8V5w" name="AbsenceVerification" associationsIn="_4-xdMMlLEeqWaYLM-o8V5w _4-z5cMlLEeqWaYLM-o8V5w _4-z5cclLEeqWaYLM-o8V5w" associationsOut="_4-z5cslLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_wYv00MlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_4_G0YclLEeqWaYLM-o8V5w" position="-283.0,866.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_4_G0YslLEeqWaYLM-o8V5w" name="Table">
+      <modelElement href="backend-job-commit.uml#_waWXUMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <stereotypes xmi:id="_4_G0Y8lLEeqWaYLM-o8V5w" name="JPA1StyledElement">
+      <modelElement href="backend-job-commit.uml#_waXlcMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <visibility xmi:id="_4_G0ZMlLEeqWaYLM-o8V5w" label="+"/>
+    <attributes xmi:id="_4_G0ZclLEeqWaYLM-o8V5w" name="id">
+      <modelElement href="backend-job-commit.uml#_w3F9sMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_G0ZslLEeqWaYLM-o8V5w" name="PrimaryKey">
+        <modelElement href="backend-job-commit.uml#_w3F9sclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4_G0Z8lLEeqWaYLM-o8V5w" name="GeneratedValueMapping">
+        <modelElement href="backend-job-commit.uml#_w3IZ8MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_G0aMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_G0aclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_G0aslLEeqWaYLM-o8V5w" name="Long">
+        <modelElement href="backend-job-commit.uml#_wzDLMclGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_G0a8lLEeqWaYLM-o8V5w" name="dateDay">
+      <modelElement href="backend-job-commit.uml#_w3KPIMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_G0bMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w3K2MMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_G0bclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_G0bslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_G0b8lLEeqWaYLM-o8V5w" name="LocalDate">
+        <modelElement href="backend-job-commit.uml#_wo1fQMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_G0cMlLEeqWaYLM-o8V5w" name="start">
+      <modelElement href="backend-job-commit.uml#_w3K2MclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_G0cclLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w3LdQMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_G0cslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_G0c8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_G0dMlLEeqWaYLM-o8V5w" name="LocalTime">
+        <modelElement href="backend-job-commit.uml#_wppXkMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_G0dclLEeqWaYLM-o8V5w" name="end">
+      <modelElement href="backend-job-commit.uml#_w3LdQclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_G0dslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w3MEUMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_G0d8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_G0eMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_G0eclLEeqWaYLM-o8V5w" name="LocalTime">
+        <modelElement href="backend-job-commit.uml#_wppXkMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_G0eslLEeqWaYLM-o8V5w" name="verification">
+      <modelElement href="backend-job-commit.uml#_w3MEUclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_G0e8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w32LoMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_G0fMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_G0fclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_G0fslLEeqWaYLM-o8V5w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_G0f8lLEeqWaYLM-o8V5w" defaultValue="false" name="verified">
+      <modelElement href="backend-job-commit.uml#_w32ysMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_G0gMlLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w33ZwMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_G0gclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_G0gslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_G0g8lLEeqWaYLM-o8V5w" name="Boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_G0hMlLEeqWaYLM-o8V5w" name="user">
+      <modelElement href="backend-job-commit.uml#_w37EIMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_G0hclLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w37rMMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4_G0hslLEeqWaYLM-o8V5w" name="Annotations">
+        <modelElement href="backend-job-commit.uml#_w3-ugMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_G0h8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_G0iMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_G0iclLEeqWaYLM-o8V5w" name="User">
+        <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_4_G0islLEeqWaYLM-o8V5w" name="AbsenceVerification">
+      <modelElement href="backend-job-commit.uml#_wagIUMlGEeqWaYLM-o8V5w"/>
+      <keywords xmi:id="_4_G0i8lLEeqWaYLM-o8V5w" keyword="create"/>
+      <stereotypes xmi:id="_4_G0jMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wahWcMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_G0jclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_G0jslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4_G0j8lLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wagvYslGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_4_G0kMlLEeqWaYLM-o8V5w" name="AbsenceVerification">
+          <modelElement href="backend-job-commit.uml#_wYv00MlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_4_a9cMlLEeqWaYLM-o8V5w" name="CompanyConfiguration" associationsIn="_4_P-UMlLEeqWaYLM-o8V5w _4_P-UclLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_wbK2sMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_4_a9cclLEeqWaYLM-o8V5w" position="-705.0,634.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_4_a9cslLEeqWaYLM-o8V5w" name="JPA1StyledElement">
+      <modelElement href="backend-job-commit.uml#_wbN6AMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <visibility xmi:id="_4_a9c8lLEeqWaYLM-o8V5w" label="+"/>
+    <attributes xmi:id="_4_a9dMlLEeqWaYLM-o8V5w" name="id">
+      <modelElement href="backend-job-commit.uml#_w4AjsMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9dclLEeqWaYLM-o8V5w" name="PrimaryKey">
+        <modelElement href="backend-job-commit.uml#_w4BKwMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4_a9dslLEeqWaYLM-o8V5w" name="GeneratedValueMapping">
+        <modelElement href="backend-job-commit.uml#_w4BKwclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9d8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9eMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9eclLEeqWaYLM-o8V5w" name="Long">
+        <modelElement href="backend-job-commit.uml#_wzDLMclGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_a9eslLEeqWaYLM-o8V5w" name="isRemoteMode">
+      <modelElement href="backend-job-commit.uml#_w4C_8MlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9e8lLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w4DnAMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9fMlLEeqWaYLM-o8V5w" label="-"/>
+      <cardinality xmi:id="_4_a9fclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9fslLEeqWaYLM-o8V5w" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_a9f8lLEeqWaYLM-o8V5w" name="isHolidayMode">
+      <modelElement href="backend-job-commit.uml#_w4DnAclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9gMlLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w4EOEMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9gclLEeqWaYLM-o8V5w" label="-"/>
+      <cardinality xmi:id="_4_a9gslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9g8lLEeqWaYLM-o8V5w" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_a9hMlLEeqWaYLM-o8V5w" name="longitude">
+      <modelElement href="backend-job-commit.uml#_w4E1IMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9hclLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4FcMMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9hslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9h8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9iMlLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_a9iclLEeqWaYLM-o8V5w" name="latitude">
+      <modelElement href="backend-job-commit.uml#_w4FcMclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9islLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4FcMslGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9i8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9jMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9jclLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_a9jslLEeqWaYLM-o8V5w" name="AcceptRaduis">
+      <modelElement href="backend-job-commit.uml#_w4GDQMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9j8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4GDQclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9kMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9kclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9kslLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_a9k8lLEeqWaYLM-o8V5w" name="startTime">
+      <modelElement href="backend-job-commit.uml#_w4GqUMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9lMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4GqUclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9lclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9lslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9l8lLEeqWaYLM-o8V5w" name="LocalTime">
+        <modelElement href="backend-job-commit.uml#_wppXkMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_a9mMlLEeqWaYLM-o8V5w" name="endTime">
+      <modelElement href="backend-job-commit.uml#_w4HRYMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9mclLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4HRYclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9mslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9m8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9nMlLEeqWaYLM-o8V5w" name="LocalTime">
+        <modelElement href="backend-job-commit.uml#_wppXkMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_a9nclLEeqWaYLM-o8V5w" name="margin">
+      <modelElement href="backend-job-commit.uml#_w4HRYslGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9nslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4H4cMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9n8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9oMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9oclLEeqWaYLM-o8V5w" name="Float">
+        <modelElement href="backend-job-commit.uml#_wz9KIMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_a9oslLEeqWaYLM-o8V5w" name="isMarginActivated">
+      <modelElement href="backend-job-commit.uml#_w4H4cclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9o8lLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w4IfgMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9pMlLEeqWaYLM-o8V5w" label="-"/>
+      <cardinality xmi:id="_4_a9pclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9pslLEeqWaYLM-o8V5w" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_a9p8lLEeqWaYLM-o8V5w" name="theoricalDailyWorkedTime">
+      <modelElement href="backend-job-commit.uml#_w4JGkMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9qMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4JGkclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9qclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9qslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9q8lLEeqWaYLM-o8V5w" name="Float">
+        <modelElement href="backend-job-commit.uml#_wz9KIMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_a9rMlLEeqWaYLM-o8V5w" name="theoricalMonthlyWorkedTime">
+      <modelElement href="backend-job-commit.uml#_w4JtoMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9rclLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4KUsMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9rslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9r8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9sMlLEeqWaYLM-o8V5w" name="Float">
+        <modelElement href="backend-job-commit.uml#_wz9KIMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4_a9sclLEeqWaYLM-o8V5w" name="theoricalWeeklyWorkedTime">
+      <modelElement href="backend-job-commit.uml#_w4KUsclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9sslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4KUsslGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9s8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9tMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_4_a9tclLEeqWaYLM-o8V5w" name="Float">
+        <modelElement href="backend-job-commit.uml#_wz9KIMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_4_a9tslLEeqWaYLM-o8V5w" name="CompanyConfiguration">
+      <modelElement href="backend-job-commit.uml#_wbauUMlGEeqWaYLM-o8V5w"/>
+      <keywords xmi:id="_4_a9t8lLEeqWaYLM-o8V5w" keyword="create"/>
+      <stereotypes xmi:id="_4_a9uMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wbcjgMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9uclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9uslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4_a9u8lLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wbbVYslGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_4_a9vMlLEeqWaYLM-o8V5w" name="CompanyConfiguration">
+          <modelElement href="backend-job-commit.uml#_wbK2sMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_4_a9vclLEeqWaYLM-o8V5w" name="isRemoteMode">
+      <modelElement href="backend-job-commit.uml#_wbeYsMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9vslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wbiDEMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9v8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9wMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4_a9wclLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wbgN4MlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_4_a9wslLEeqWaYLM-o8V5w" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_4_a9w8lLEeqWaYLM-o8V5w" name="setRemoteMode">
+      <modelElement href="backend-job-commit.uml#_wbiqIMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9xMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wbowwMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9xclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9xslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_4_a9x8lLEeqWaYLM-o8V5w" name="isRemoteMode">
+        <modelElement href="backend-job-commit.uml#_wbiqIclGEeqWaYLM-o8V5w"/>
+        <cardinality xmi:id="_4_a9yMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+        <type xmi:id="_4_a9yclLEeqWaYLM-o8V5w" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_4_a9yslLEeqWaYLM-o8V5w" name="isHolidayMode">
+      <modelElement href="backend-job-commit.uml#_wb5PcMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a9y8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wb_9IMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a9zMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a9zclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4_a9zslLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wb52gMlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_4_a9z8lLEeqWaYLM-o8V5w" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_4_a90MlLEeqWaYLM-o8V5w" name="setHolidayMode">
+      <modelElement href="backend-job-commit.uml#_wcByUMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a90clLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wcCZYMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a90slLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a908lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_4_a91MlLEeqWaYLM-o8V5w" name="isHolidayMode">
+        <modelElement href="backend-job-commit.uml#_wcByUclGEeqWaYLM-o8V5w"/>
+        <cardinality xmi:id="_4_a91clLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+        <type xmi:id="_4_a91slLEeqWaYLM-o8V5w" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_4_a918lLEeqWaYLM-o8V5w" name="isMarginActivated">
+      <modelElement href="backend-job-commit.uml#_wcCZYclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a92MlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wcDngMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a92clLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a92slLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4_a928lLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wcDAcMlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_4_a93MlLEeqWaYLM-o8V5w" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_4_a93clLEeqWaYLM-o8V5w" name="setMarginActivated">
+      <modelElement href="backend-job-commit.uml#_wcEOkMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_4_a93slLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wcE1oMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_4_a938lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_4_a94MlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_4_a94clLEeqWaYLM-o8V5w" name="isMarginActivated">
+        <modelElement href="backend-job-commit.uml#_wcEOkclGEeqWaYLM-o8V5w"/>
+        <cardinality xmi:id="_4_a94slLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+        <type xmi:id="_4_a948lLEeqWaYLM-o8V5w" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5AEdsMlLEeqWaYLM-o8V5w" name="DailyRecord" associationsIn="_4_q1EMlLEeqWaYLM-o8V5w _4_rcIMlLEeqWaYLM-o8V5w _4_rcIclLEeqWaYLM-o8V5w _4_sDMMlLEeqWaYLM-o8V5w _4_sDMclLEeqWaYLM-o8V5w" associationsOut="_4_sDMslLEeqWaYLM-o8V5w _5ADPkMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_wcoPQMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5AEdsclLEeqWaYLM-o8V5w" position="771.0,1565.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_5AEdsslLEeqWaYLM-o8V5w" name="JPA1StyledElement">
+      <modelElement href="backend-job-commit.uml#_wcqrgMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <visibility xmi:id="_5AEds8lLEeqWaYLM-o8V5w" label="+"/>
+    <attributes xmi:id="_5AEdtMlLEeqWaYLM-o8V5w" name="id">
+      <modelElement href="backend-job-commit.uml#_w4j9UMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEdtclLEeqWaYLM-o8V5w" name="PrimaryKey">
+        <modelElement href="backend-job-commit.uml#_w4kkYMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5AEdtslLEeqWaYLM-o8V5w" name="GeneratedValueMapping">
+        <modelElement href="backend-job-commit.uml#_w4kkYclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEdt8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEduMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5AEduclLEeqWaYLM-o8V5w" name="Long">
+        <modelElement href="backend-job-commit.uml#_wzDLMclGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5AEduslLEeqWaYLM-o8V5w" name="entranceTime">
+      <modelElement href="backend-job-commit.uml#_w4mZkMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEdu8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4mZkclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEdvMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEdvclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5AEdvslLEeqWaYLM-o8V5w" name="LocalTime">
+        <modelElement href="backend-job-commit.uml#_wppXkMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5AEdv8lLEeqWaYLM-o8V5w" name="exitTime">
+      <modelElement href="backend-job-commit.uml#_w4nAoMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEdwMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4nAoclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEdwclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEdwslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5AEdw8lLEeqWaYLM-o8V5w" name="LocalTime">
+        <modelElement href="backend-job-commit.uml#_wppXkMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5AEdxMlLEeqWaYLM-o8V5w" name="date">
+      <modelElement href="backend-job-commit.uml#_w4nAoslGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEdxclLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4nnsMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEdxslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEdx8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5AEdyMlLEeqWaYLM-o8V5w" name="LocalDate">
+        <modelElement href="backend-job-commit.uml#_wo1fQMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5AEdyclLEeqWaYLM-o8V5w" name="latestEntranceTime">
+      <modelElement href="backend-job-commit.uml#_w4nnsclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEdyslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4oOwMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEdy8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEdzMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5AEdzclLEeqWaYLM-o8V5w" name="LocalTime">
+        <modelElement href="backend-job-commit.uml#_wppXkMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5AEdzslLEeqWaYLM-o8V5w" name="breaks">
+      <modelElement href="backend-job-commit.uml#_w4oOwclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEdz8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4o10MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEd0MlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEd0clLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5AEd0slLEeqWaYLM-o8V5w" name="Integer">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5AEd08lLEeqWaYLM-o8V5w" name="Worked">
+      <modelElement href="backend-job-commit.uml#_w4o10clGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEd1MlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4pc4MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEd1clLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEd1slLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5AEd18lLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5AEd2MlLEeqWaYLM-o8V5w" name="delay">
+      <modelElement href="backend-job-commit.uml#_w4pc4clGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEd2clLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4qD8MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEd2slLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEd28lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5AEd3MlLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5AEd3clLEeqWaYLM-o8V5w" name="theorical">
+      <modelElement href="backend-job-commit.uml#_w4qD8clGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEd3slLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w4qrAMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEd38lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEd4MlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5AEd4clLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5AEd4slLEeqWaYLM-o8V5w" name="user">
+      <modelElement href="backend-job-commit.uml#_w4qrAclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEd48lLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w4rSEMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5AEd5MlLEeqWaYLM-o8V5w" name="Annotations">
+        <modelElement href="backend-job-commit.uml#_w4tHQMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEd5clLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEd5slLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5AEd58lLEeqWaYLM-o8V5w" name="User">
+        <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5AEd6MlLEeqWaYLM-o8V5w" name="exitReasons">
+      <modelElement href="backend-job-commit.uml#_w4uVYMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEd6clLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w4vjgMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5AEd6slLEeqWaYLM-o8V5w" name="Annotations">
+        <modelElement href="backend-job-commit.uml#_w4vjgclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEd68lLEeqWaYLM-o8V5w" label="~"/>
+      <cardinality xmi:id="_5AEd7MlLEeqWaYLM-o8V5w" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_5AEd7clLEeqWaYLM-o8V5w" name="ExitReason">
+        <modelElement href="backend-job-commit.uml#_weepYMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5AEd7slLEeqWaYLM-o8V5w" name="DailyRecord">
+      <modelElement href="backend-job-commit.uml#_wcuV4MlGEeqWaYLM-o8V5w"/>
+      <keywords xmi:id="_5AEd78lLEeqWaYLM-o8V5w" keyword="create"/>
+      <stereotypes xmi:id="_5AEd8MlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wcwyIMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEd8clLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEd8slLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5AEd88lLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wcu88slGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_5AEd9MlLEeqWaYLM-o8V5w" name="DailyRecord">
+          <modelElement href="backend-job-commit.uml#_wcoPQMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5AEd9clLEeqWaYLM-o8V5w" name="getExitReasons">
+      <modelElement href="backend-job-commit.uml#_wcwyIclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEd9slLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wczOYMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEd98lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEd-MlLEeqWaYLM-o8V5w" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_5AEd-clLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wcxZMMlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_5AEd-slLEeqWaYLM-o8V5w" name="ExitReason">
+          <modelElement href="backend-job-commit.uml#_weepYMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5AEd-8lLEeqWaYLM-o8V5w" name="toString">
+      <modelElement href="backend-job-commit.uml#_wcz1cMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEd_MlLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_wc1DkclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5AEd_clLEeqWaYLM-o8V5w" name="Annotations">
+        <modelElement href="backend-job-commit.uml#_wc4G4MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEd_slLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEd_8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5AEeAMlLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wc1DkMlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_5AEeAclLEeqWaYLM-o8V5w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5AEeAslLEeqWaYLM-o8V5w" name="setExitReasons">
+      <modelElement href="backend-job-commit.uml#_w0jnEMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AEeA8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w0kOIMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AEeBMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AEeBclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5AEeBslLEeqWaYLM-o8V5w" name="exitReasons">
+        <modelElement href="backend-job-commit.uml#_w0jnEclGEeqWaYLM-o8V5w"/>
+        <cardinality xmi:id="_5AEeB8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+        <type xmi:id="_5AEeCMlLEeqWaYLM-o8V5w" name="Set">
+          <modelElement href="backend-job-commit.uml#_wvI7kMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_5AWxkMlLEeqWaYLM-o8V5w" name="Role">
+    <modelElement href="backend-job-commit.uml#_weZJ0MlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5AWxkclLEeqWaYLM-o8V5w" position="-193.0,1123.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_5AWxkslLEeqWaYLM-o8V5w" label="+"/>
+    <literals xmi:id="_5AWxk8lLEeqWaYLM-o8V5w" name="ADMIN">
+      <modelElement href="backend-job-commit.uml#_wea_AMlGEeqWaYLM-o8V5w"/>
+    </literals>
+    <literals xmi:id="_5AWxlMlLEeqWaYLM-o8V5w" name="EMPLOYEE">
+      <modelElement href="backend-job-commit.uml#_webmEMlGEeqWaYLM-o8V5w"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5AcRIMlLEeqWaYLM-o8V5w" name="ExitReason" associationsIn="_5ADPkMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_weepYMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5AcRIclLEeqWaYLM-o8V5w" position="1383.0,539.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_5AcRIslLEeqWaYLM-o8V5w" name="JPA1StyledElement">
+      <modelElement href="backend-job-commit.uml#_weiTwMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <visibility xmi:id="_5AcRI8lLEeqWaYLM-o8V5w" label="-"/>
+    <attributes xmi:id="_5AcRJMlLEeqWaYLM-o8V5w" name="id">
+      <modelElement href="backend-job-commit.uml#_w4x_wMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5AcRJclLEeqWaYLM-o8V5w" name="PrimaryKey">
+        <modelElement href="backend-job-commit.uml#_w4ym0MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5AcRJslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5AcRJ8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5Ac4MMlLEeqWaYLM-o8V5w" name="Long">
+        <modelElement href="backend-job-commit.uml#_wzDLMclGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5Ac4MclLEeqWaYLM-o8V5w" name="name">
+      <modelElement href="backend-job-commit.uml#_w4z08MlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5Ac4MslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w41DEMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5Ac4M8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5Ac4NMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5Ac4NclLEeqWaYLM-o8V5w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5Ac4NslLEeqWaYLM-o8V5w" name="ExitReason">
+      <modelElement href="backend-job-commit.uml#_wejh4MlGEeqWaYLM-o8V5w"/>
+      <keywords xmi:id="_5Ac4N8lLEeqWaYLM-o8V5w" keyword="create"/>
+      <stereotypes xmi:id="_5Ac4OMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wekwAMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5Ac4OclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5Ac4OslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5Ac4O8lLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wekI8slGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_5Ac4PMlLEeqWaYLM-o8V5w" name="ExitReason">
+          <modelElement href="backend-job-commit.uml#_weepYMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5Aq6oMlLEeqWaYLM-o8V5w" name="MonthlyRecord" associationsIn="_5AiXwMlLEeqWaYLM-o8V5w" associationsOut="_5AiXwclLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_wenzUMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5Aq6oclLEeqWaYLM-o8V5w" position="88.0,1565.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_5Aq6oslLEeqWaYLM-o8V5w" name="JPA1StyledElement">
+      <modelElement href="backend-job-commit.uml#_wepBcMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <visibility xmi:id="_5Aq6o8lLEeqWaYLM-o8V5w" label="+"/>
+    <attributes xmi:id="_5Aq6pMlLEeqWaYLM-o8V5w" name="id">
+      <modelElement href="backend-job-commit.uml#_w41qIMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5Aq6pclLEeqWaYLM-o8V5w" name="PrimaryKey">
+        <modelElement href="backend-job-commit.uml#_w42RMMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5Aq6pslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5Aq6p8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5Aq6qMlLEeqWaYLM-o8V5w" name="Long">
+        <modelElement href="backend-job-commit.uml#_wzDLMclGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5Aq6qclLEeqWaYLM-o8V5w" name="Worked">
+      <modelElement href="backend-job-commit.uml#_w5JzMMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5Aq6qslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5KaQMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5Aq6q8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5Aq6rMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5Aq6rclLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5Aq6rslLEeqWaYLM-o8V5w" name="delay">
+      <modelElement href="backend-job-commit.uml#_w5KaQclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5Aq6r8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5LoYMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5Aq6sMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5Aq6sclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5Aq6sslLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5Aq6s8lLEeqWaYLM-o8V5w" name="theorical">
+      <modelElement href="backend-job-commit.uml#_w5LoYclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5Aq6tMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5MPcMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5Aq6tclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5Aq6tslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5Aq6t8lLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5Aq6uMlLEeqWaYLM-o8V5w" name="verified">
+      <modelElement href="backend-job-commit.uml#_w5MPcclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5Aq6uclLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5NdkMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5Aq6uslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5Aq6u8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5Aq6vMlLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5Aq6vclLEeqWaYLM-o8V5w" name="user">
+      <modelElement href="backend-job-commit.uml#_w5NdkclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5Aq6vslLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w5OEoMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5Aq6v8lLEeqWaYLM-o8V5w" name="Annotations">
+        <modelElement href="backend-job-commit.uml#_w5OrsMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5Aq6wMlLEeqWaYLM-o8V5w" label="-"/>
+      <cardinality xmi:id="_5Aq6wclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5Aq6wslLEeqWaYLM-o8V5w" name="User">
+        <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5ArhsMlLEeqWaYLM-o8V5w" name="getUser">
+      <modelElement href="backend-job-commit.uml#_weq2oMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5ArhsclLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_werdsMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5ArhsslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5Arhs8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5ArhtMlLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wwY4wMlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_5ArhtclLEeqWaYLM-o8V5w" name="User">
+          <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5ArhtslLEeqWaYLM-o8V5w" name="MonthlyRecord">
+      <modelElement href="backend-job-commit.uml#_wetS4MlGEeqWaYLM-o8V5w"/>
+      <keywords xmi:id="_5Arht8lLEeqWaYLM-o8V5w" keyword="create"/>
+      <stereotypes xmi:id="_5ArhuMlLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_weuhAMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5ArhuclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5ArhuslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5Arhu8lLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wevIEMlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_5ArhvMlLEeqWaYLM-o8V5w" name="MonthlyRecord">
+          <modelElement href="backend-job-commit.uml#_wenzUMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5ArhvclLEeqWaYLM-o8V5w" name="setUser">
+      <modelElement href="backend-job-commit.uml#_wwZf0MlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5ArhvslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wwaG4MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5Arhv8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5ArhwMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5ArhwclLEeqWaYLM-o8V5w" name="user">
+        <modelElement href="backend-job-commit.uml#_wwZf0clGEeqWaYLM-o8V5w"/>
+        <cardinality xmi:id="_5ArhwslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+        <type xmi:id="_5Arhw8lLEeqWaYLM-o8V5w" name="User">
+          <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5BA44MlLEeqWaYLM-o8V5w" name="Delay" associationsIn="_5A1SsMlLEeqWaYLM-o8V5w _5A15wMlLEeqWaYLM-o8V5w _5A15wclLEeqWaYLM-o8V5w" associationsOut="_5A15wslLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_wfiZUMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5BA44clLEeqWaYLM-o8V5w" position="78.0,824.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_5BA44slLEeqWaYLM-o8V5w" name="JPA1StyledElement">
+      <modelElement href="backend-job-commit.uml#_wfmDsMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <visibility xmi:id="_5BA448lLEeqWaYLM-o8V5w" label="+"/>
+    <attributes xmi:id="_5BA45MlLEeqWaYLM-o8V5w" name="id">
+      <modelElement href="backend-job-commit.uml#_w5Qg4MlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BA45clLEeqWaYLM-o8V5w" name="PrimaryKey">
+        <modelElement href="backend-job-commit.uml#_w5WAcMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5BA45slLEeqWaYLM-o8V5w" name="GeneratedValueMapping">
+        <modelElement href="backend-job-commit.uml#_w5X1oMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BA458lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BA46MlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BA46clLEeqWaYLM-o8V5w" name="Long">
+        <modelElement href="backend-job-commit.uml#_wzDLMclGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BA46slLEeqWaYLM-o8V5w" name="duration">
+      <modelElement href="backend-job-commit.uml#_w5Zq0MlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BA468lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5aR4MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BA47MlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BA47clLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BA47slLEeqWaYLM-o8V5w" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BA478lLEeqWaYLM-o8V5w" name="start">
+      <modelElement href="backend-job-commit.uml#_w5a48MlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BA48MlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5bgAMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BA48clLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BA48slLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BA488lLEeqWaYLM-o8V5w" name="LocalTime">
+        <modelElement href="backend-job-commit.uml#_wppXkMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BA49MlLEeqWaYLM-o8V5w" name="end">
+      <modelElement href="backend-job-commit.uml#_w5cHEMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BA49clLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5dVMMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BA49slLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BA498lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BA4-MlLEeqWaYLM-o8V5w" name="LocalTime">
+        <modelElement href="backend-job-commit.uml#_wppXkMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BA4-clLEeqWaYLM-o8V5w" name="date">
+      <modelElement href="backend-job-commit.uml#_w5dVMclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BA4-slLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5d8QMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BA4-8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BA4_MlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BA4_clLEeqWaYLM-o8V5w" name="LocalDate">
+        <modelElement href="backend-job-commit.uml#_wo1fQMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BA4_slLEeqWaYLM-o8V5w" name="verified">
+      <modelElement href="backend-job-commit.uml#_w5ejUMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BA4_8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5fKYMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BA5AMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BA5AclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BA5AslLEeqWaYLM-o8V5w" name="Boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BA5A8lLEeqWaYLM-o8V5w" name="isSatteled">
+      <modelElement href="backend-job-commit.uml#_w5fxcMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BA5BMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5fxcclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BA5BclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BA5BslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BA5B8lLEeqWaYLM-o8V5w" name="Boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BA5CMlLEeqWaYLM-o8V5w" name="verification">
+      <modelElement href="backend-job-commit.uml#_w5gYgMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BA5CclLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5gYgclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BA5CslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BA5C8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BA5DMlLEeqWaYLM-o8V5w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BA5DclLEeqWaYLM-o8V5w" name="user">
+      <modelElement href="backend-job-commit.uml#_w5kC4MlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BA5DslLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w5kC4clGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5BA5D8lLEeqWaYLM-o8V5w" name="Annotations">
+        <modelElement href="backend-job-commit.uml#_w5l4EMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BA5EMlLEeqWaYLM-o8V5w" label="-"/>
+      <cardinality xmi:id="_5BA5EclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BA5EslLEeqWaYLM-o8V5w" name="User">
+        <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5BA5E8lLEeqWaYLM-o8V5w" name="getUser">
+      <modelElement href="backend-job-commit.uml#_wfsKUMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BA5FMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wftYcMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BA5FclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BA5FslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5BA5F8lLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wwipwMlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_5BA5GMlLEeqWaYLM-o8V5w" name="User">
+          <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5BA5GclLEeqWaYLM-o8V5w" name="setUser">
+      <modelElement href="backend-job-commit.uml#_wwke8MlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BA5GslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wwmUIMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BA5G8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BA5HMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5BA5HclLEeqWaYLM-o8V5w" name="user">
+        <modelElement href="backend-job-commit.uml#_wwlGAMlGEeqWaYLM-o8V5w"/>
+        <cardinality xmi:id="_5BA5HslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+        <type xmi:id="_5BA5H8lLEeqWaYLM-o8V5w" name="User">
+          <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5BgoKclLEeqWaYLM-o8V5w" name="User" associationsIn="_4-kB0MlLEeqWaYLM-o8V5w _4-z5cslLEeqWaYLM-o8V5w _4_sDMslLEeqWaYLM-o8V5w _5AiXwclLEeqWaYLM-o8V5w _5A15wslLEeqWaYLM-o8V5w _5BeL4MlLEeqWaYLM-o8V5w" associationsOut="_4_q1EMlLEeqWaYLM-o8V5w _5AiXwMlLEeqWaYLM-o8V5w _5BgoIMlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5BgoKslLEeqWaYLM-o8V5w" position="418.0,1105.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_5BgoK8lLEeqWaYLM-o8V5w" name="JPA1StyledElement">
+      <modelElement href="backend-job-commit.uml#_wgW4sMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <visibility xmi:id="_5BgoLMlLEeqWaYLM-o8V5w" label="+"/>
+    <attributes xmi:id="_5BgoLclLEeqWaYLM-o8V5w" name="id">
+      <modelElement href="backend-job-commit.uml#_w5vpEMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BgoLslLEeqWaYLM-o8V5w" name="PrimaryKey">
+        <modelElement href="backend-job-commit.uml#_w5wQIMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5BgoL8lLEeqWaYLM-o8V5w" name="GeneratedValueMapping">
+        <modelElement href="backend-job-commit.uml#_w5wQIclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BgoMMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BgoMclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BhPMMlLEeqWaYLM-o8V5w" name="Long">
+        <modelElement href="backend-job-commit.uml#_wzDLMclGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPMclLEeqWaYLM-o8V5w" name="name">
+      <modelElement href="backend-job-commit.uml#_w5ysYMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPMslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5zTcMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPM8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPNMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BhPNclLEeqWaYLM-o8V5w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPNslLEeqWaYLM-o8V5w" name="lastName">
+      <modelElement href="backend-job-commit.uml#_w5zTcclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPN8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w5z6gMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPOMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPOclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BhPOslLEeqWaYLM-o8V5w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPO8lLEeqWaYLM-o8V5w" name="phoneNumber">
+      <modelElement href="backend-job-commit.uml#_w5z6gclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPPMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w6EZMMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPPclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPPslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BhPP8lLEeqWaYLM-o8V5w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPQMlLEeqWaYLM-o8V5w" name="email">
+      <modelElement href="backend-job-commit.uml#_w6EZMclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPQclLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w6FAQMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPQslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPQ8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BhPRMlLEeqWaYLM-o8V5w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPRclLEeqWaYLM-o8V5w" name="adress">
+      <modelElement href="backend-job-commit.uml#_w6FAQclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPRslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w6FnUMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPR8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPSMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BhPSclLEeqWaYLM-o8V5w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPSslLEeqWaYLM-o8V5w" name="isRemote">
+      <modelElement href="backend-job-commit.uml#_w6FnUclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPS8lLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w6IDkMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPTMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPTclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BhPTslLEeqWaYLM-o8V5w" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPT8lLEeqWaYLM-o8V5w" name="isHoliday">
+      <modelElement href="backend-job-commit.uml#_w6RNgMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPUMlLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w6R0kMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPUclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPUslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BhPU8lLEeqWaYLM-o8V5w" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPVMlLEeqWaYLM-o8V5w" name="isOut">
+      <modelElement href="backend-job-commit.uml#_w6Ve8MlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPVclLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w6WtEMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPVslLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPV8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BhPWMlLEeqWaYLM-o8V5w" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPWclLEeqWaYLM-o8V5w" name="login">
+      <modelElement href="backend-job-commit.uml#_w6YiQMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPWslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w6ZJUMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPW8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPXMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BhPXclLEeqWaYLM-o8V5w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPXslLEeqWaYLM-o8V5w" name="password">
+      <modelElement href="backend-job-commit.uml#_w6ZwYMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPX8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w6ZwYclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPYMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPYclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BhPYslLEeqWaYLM-o8V5w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPY8lLEeqWaYLM-o8V5w" name="role">
+      <modelElement href="backend-job-commit.uml#_w6aXcMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPZMlLEeqWaYLM-o8V5w" name="EnumerationStyleMapping">
+        <modelElement href="backend-job-commit.uml#_w6ny0MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPZclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPZslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5BhPZ8lLEeqWaYLM-o8V5w" name="Role">
+        <modelElement href="backend-job-commit.uml#_weZJ0MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPaMlLEeqWaYLM-o8V5w" name="dailyRecords">
+      <modelElement href="backend-job-commit.uml#_w6pA8MlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_5BhPaclLEeqWaYLM-o8V5w" label="~"/>
+      <cardinality xmi:id="_5BhPaslLEeqWaYLM-o8V5w" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_5BhPa8lLEeqWaYLM-o8V5w" name="DailyRecord">
+        <modelElement href="backend-job-commit.uml#_wcoPQMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPbMlLEeqWaYLM-o8V5w" name="monthlyRecord">
+      <modelElement href="backend-job-commit.uml#_w6sEQclGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_5BhPbclLEeqWaYLM-o8V5w" label="~"/>
+      <cardinality xmi:id="_5BhPbslLEeqWaYLM-o8V5w" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_5BhPb8lLEeqWaYLM-o8V5w" name="MonthlyRecord">
+        <modelElement href="backend-job-commit.uml#_wenzUMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5BhPcMlLEeqWaYLM-o8V5w" name="weeklyRecord">
+      <modelElement href="backend-job-commit.uml#_w6t5cMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPcclLEeqWaYLM-o8V5w" name="LegacyStyledElement">
+        <modelElement href="backend-job-commit.uml#_w6vHkMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5BhPcslLEeqWaYLM-o8V5w" name="Annotations">
+        <modelElement href="backend-job-commit.uml#_w6vHkclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPc8lLEeqWaYLM-o8V5w" label="~"/>
+      <cardinality xmi:id="_5BhPdMlLEeqWaYLM-o8V5w" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_5BhPdclLEeqWaYLM-o8V5w" name="WeeklyRecord">
+        <modelElement href="backend-job-commit.uml#_whqgQMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5BhPdslLEeqWaYLM-o8V5w" name="User">
+      <modelElement href="backend-job-commit.uml#_wgeNcMlGEeqWaYLM-o8V5w"/>
+      <keywords xmi:id="_5BhPd8lLEeqWaYLM-o8V5w" keyword="create"/>
+      <stereotypes xmi:id="_5BhPeMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wggpsMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPeclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPeslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5BhPe8lLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wggCoslGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_5BhPfMlLEeqWaYLM-o8V5w" name="User">
+          <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5BhPfclLEeqWaYLM-o8V5w" name="getDailyRecords">
+      <modelElement href="backend-job-commit.uml#_wggpsclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPfslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wgjtAMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPf8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPgMlLEeqWaYLM-o8V5w" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_5BhPgclLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wghQwMlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_5BhPgslLEeqWaYLM-o8V5w" name="DailyRecord">
+          <modelElement href="backend-job-commit.uml#_wcoPQMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5BhPg8lLEeqWaYLM-o8V5w" name="getMonthlyRecord">
+      <modelElement href="backend-job-commit.uml#_wgxIYMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPhMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wg0LsMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPhclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPhslLEeqWaYLM-o8V5w" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_5BhPh8lLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wgyWgMlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_5BhPiMlLEeqWaYLM-o8V5w" name="MonthlyRecord">
+          <modelElement href="backend-job-commit.uml#_wenzUMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5BhPiclLEeqWaYLM-o8V5w" name="getWeeklyRecord">
+      <modelElement href="backend-job-commit.uml#_wg0ywMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPislLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wg2n8MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPi8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPjMlLEeqWaYLM-o8V5w" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_5BhPjclLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wg1Z0MlGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_5BhPjslLEeqWaYLM-o8V5w" name="WeeklyRecord">
+          <modelElement href="backend-job-commit.uml#_whqgQMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5BhPj8lLEeqWaYLM-o8V5w" name="setDailyRecords">
+      <modelElement href="backend-job-commit.uml#_w1KrEMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPkMlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w1LSIMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPkclLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPkslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5BhPk8lLEeqWaYLM-o8V5w" name="dailyRecords">
+        <modelElement href="backend-job-commit.uml#_w1KrEclGEeqWaYLM-o8V5w"/>
+        <cardinality xmi:id="_5BhPlMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+        <type xmi:id="_5BhPlclLEeqWaYLM-o8V5w" name="List">
+          <modelElement href="backend-job-commit.uml#_ww5PEMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5BhPlslLEeqWaYLM-o8V5w" name="setMonthlyRecord">
+      <modelElement href="backend-job-commit.uml#_w1VDIMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPl8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w1VqMMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPmMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPmclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5BhPmslLEeqWaYLM-o8V5w" name="monthlyRecord">
+        <modelElement href="backend-job-commit.uml#_w1VDIclGEeqWaYLM-o8V5w"/>
+        <cardinality xmi:id="_5BhPm8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+        <type xmi:id="_5BhPnMlLEeqWaYLM-o8V5w" name="List">
+          <modelElement href="backend-job-commit.uml#_ww5PEMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5BhPnclLEeqWaYLM-o8V5w" name="setWeeklyRecord">
+      <modelElement href="backend-job-commit.uml#_w10yYMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5BhPnslLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w11ZcMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5BhPn8lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5BhPoMlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5BhPoclLEeqWaYLM-o8V5w" name="weeklyRecord">
+        <modelElement href="backend-job-commit.uml#_w10yYclGEeqWaYLM-o8V5w"/>
+        <cardinality xmi:id="_5BhPoslLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+        <type xmi:id="_5BhPo8lLEeqWaYLM-o8V5w" name="List">
+          <modelElement href="backend-job-commit.uml#_ww5PEMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5B7e4MlLEeqWaYLM-o8V5w" name="WeeklyRecord" associationsIn="_5BgoIMlLEeqWaYLM-o8V5w" associationsOut="_5BeL4MlLEeqWaYLM-o8V5w">
+    <modelElement href="backend-job-commit.uml#_whqgQMlGEeqWaYLM-o8V5w"/>
+    <visualProperties xmi:id="_5B7e4clLEeqWaYLM-o8V5w" position="1094.0,1565.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_5B7e4slLEeqWaYLM-o8V5w" name="JPA1StyledElement">
+      <modelElement href="backend-job-commit.uml#_whtjkMlGEeqWaYLM-o8V5w"/>
+    </stereotypes>
+    <visibility xmi:id="_5B7e48lLEeqWaYLM-o8V5w" label="+"/>
+    <attributes xmi:id="_5B7e5MlLEeqWaYLM-o8V5w" name="id">
+      <modelElement href="backend-job-commit.uml#_w6yK4MlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5B7e5clLEeqWaYLM-o8V5w" name="PrimaryKey">
+        <modelElement href="backend-job-commit.uml#_w6yx8MlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5B7e5slLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5B7e58lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5B7e6MlLEeqWaYLM-o8V5w" name="Long">
+        <modelElement href="backend-job-commit.uml#_wzDLMclGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5B7e6clLEeqWaYLM-o8V5w" name="Worked">
+      <modelElement href="backend-job-commit.uml#_w60AEMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5B7e6slLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w60AEclGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5B7e68lLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5B7e7MlLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5B7e7clLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5B7e7slLEeqWaYLM-o8V5w" name="delay">
+      <modelElement href="backend-job-commit.uml#_w60nIMlGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5B7e78lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w61OMMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5B7e8MlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5B7e8clLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5B7e8slLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5B7e88lLEeqWaYLM-o8V5w" name="theorical">
+      <modelElement href="backend-job-commit.uml#_w61OMclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5B7e9MlLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w611QMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5B7e9clLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5B7e9slLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5B7e98lLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5B7e-MlLEeqWaYLM-o8V5w" name="verified">
+      <modelElement href="backend-job-commit.uml#_w611QclGEeqWaYLM-o8V5w"/>
+      <stereotypes xmi:id="_5B7e-clLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_w62cUMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5B7e-slLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5B7e-8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5B7e_MlLEeqWaYLM-o8V5w" name="Double">
+        <modelElement href="backend-job-commit.uml#_wznL4MlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5B7e_clLEeqWaYLM-o8V5w" name="user">
+      <modelElement href="backend-job-commit.uml#_w63DYMlGEeqWaYLM-o8V5w"/>
+      <visibility xmi:id="_5B7e_slLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5B7e_8lLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <type xmi:id="_5B7fAMlLEeqWaYLM-o8V5w" name="User">
+        <modelElement href="backend-job-commit.uml#_wgNHsMlGEeqWaYLM-o8V5w"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5B7fAclLEeqWaYLM-o8V5w" name="WeeklyRecord">
+      <modelElement href="backend-job-commit.uml#_wh3UkMlGEeqWaYLM-o8V5w"/>
+      <keywords xmi:id="_5B7fAslLEeqWaYLM-o8V5w" keyword="create"/>
+      <stereotypes xmi:id="_5B7fA8lLEeqWaYLM-o8V5w" name="StyledElement">
+        <modelElement href="backend-job-commit.uml#_wh9bMMlGEeqWaYLM-o8V5w"/>
+      </stereotypes>
+      <visibility xmi:id="_5B7fBMlLEeqWaYLM-o8V5w" label="+"/>
+      <cardinality xmi:id="_5B7fBclLEeqWaYLM-o8V5w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5B7fBslLEeqWaYLM-o8V5w">
+        <modelElement href="backend-job-commit.uml#_wh37oslGEeqWaYLM-o8V5w"/>
+        <type xmi:id="_5B7fB8lLEeqWaYLM-o8V5w" name="WeeklyRecord">
+          <modelElement href="backend-job-commit.uml#_whqgQMlGEeqWaYLM-o8V5w"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

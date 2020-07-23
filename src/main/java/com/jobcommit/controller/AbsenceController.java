@@ -120,5 +120,17 @@ public class AbsenceController {
 	}
 	
 	
+	@PutMapping("updateDelay")
+	public ResponseEntity<?> updatedelay(@RequestBody Delay body){
+		delayRepository.save(body);
+		return new ResponseEntity<>(delayRepository.findAll(), HttpStatus.OK); 
+	}
+	
+	@GetMapping("allDelays")
+	public ResponseEntity<?> getAllDelays( ){
+		return new ResponseEntity<>(delayRepository.findAll(), HttpStatus.OK); 
+	}
+
+	
 
 }
