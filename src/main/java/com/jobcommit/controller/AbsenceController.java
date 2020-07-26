@@ -51,7 +51,7 @@ public class AbsenceController {
 			body.setUser(currentUser.get());
 
 			body.setIsSettled(false);
-			
+
 			body.setAccepted(null);
 
 			absenceRequestRepository.save(body);
@@ -66,71 +66,66 @@ public class AbsenceController {
 	public ResponseEntity<?> addAbsenceVerification(@RequestBody AbsenceVerification body) {
 
 		Optional<User> currentUser = userRepository.findById(CustomSecurityAthenticationProvider.userDetails.getId());
-
 		if (body != null) {
-
 			body.setUser(currentUser.get());
-
 			body.setVerified(false);
-
 			absenceVerificationRepository.save(body);
-
 			return new ResponseEntity<>(HttpStatus.OK);
 		}
-
 		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 	}
 
 	@GetMapping("absences")
 	public ResponseEntity<?> getAbsences() {
-		
+
 		Optional<User> currentUser = userRepository.findById(CustomSecurityAthenticationProvider.userDetails.getId());
 		List<Delay> delays = delayRepository.findByUserId(currentUser.get().getId());
 		return new ResponseEntity<>(delays, HttpStatus.OK);
 	}
-	
+
 	@GetMapping("allAbsences")
 	public ResponseEntity<?> getAllAbsences() {
-		
+
 		List<Delay> delays = delayRepository.findAll();
 		return new ResponseEntity<>(delays, HttpStatus.OK);
 	}
-	
 
 	@PutMapping("absences/verifyDelay/{id}")
 	public ResponseEntity<?> updatedelay(@RequestBody Delay body, @PathVariable Long id) {
-		
+
 		Optional<User> currentUser = userRepository.findById(CustomSecurityAthenticationProvider.userDetails.getId());
 		body.setId(id);
 		body.setUser(currentUser.get());
 		delayRepository.save(body);
-		
-		return new ResponseEntity<>(delayRepository.findByUserId(currentUser.get().getId()),HttpStatus.OK);
-	}
-	
-	@GetMapping("allAbsencerequests")
-	public  ResponseEntity<?>  getAllAbsenceRequests(){
-		return new ResponseEntity<>(absenceRequestRepository.findAll(), HttpStatus.OK); 
-	}
-	
-	@PutMapping("updateRequest")
-	public ResponseEntity<?> updateAbsenceRequest(@RequestBody AbsenceRequest body){
-		absenceRequestRepository.save(body);
-		return new ResponseEntity<>(absenceRequestRepository.findAll(), HttpStatus.OK); 
-	}
-	
-	
-	@PutMapping("updateDelay")
-	public ResponseEntity<?> updatedelay(@RequestBody Delay body){
-		delayRepository.save(body);
-		return new ResponseEntity<>(delayRepository.findAll(), HttpStatus.OK); 
-	}
-	
-	@GetMapping("allDelays")
-	public ResponseEntity<?> getAllDelays( ){
-		return new ResponseEntity<>(delayRepository.findAll(), HttpStatus.OK); 
+
+		return new ResponseEntity<>(delayRepository.findByUserId(currentUser.get().getId()), HttpStatus.OK);
 	}
 
-	
+	@GetMapping("allAbsencerequests")
+	public ResponseEntity<?> getAllAbsenceRequests() {
+		return new ResponseEntity<>(absenceRequestRepository.findAll(), HttpStatus.OK);
+	}
+
+	@PutMapping("updateRequest")
+	public ResponseEntity<?> updateAbsenceRequest(@RequestBody AbsenceRequest body) {
+		absenceRequestRepository.save(body);
+		return new ResponseEntity<>(absenceRequestRepository.findAll(), HttpStatus.OK);
+	}
+
+	@PutMapping("updateDelay")
+	public ResponseEntity<?> updatedelay(@RequestBody Delay body) {
+		
+		if (body.getVerified() != null) {
+			body.setIsSatteled(true);
+			System.out.println("triggered");
+		}
+		delayRepository.save(body);
+		return new ResponseEntity<>(delayRepository.findAll(), HttpStatus.OK);
+	}
+
+	@GetMapping("allDelays")
+	public ResponseEntity<?> getAllDelays() {
+		return new ResponseEntity<>(delayRepository.findAll(), HttpStatus.OK);
+	}
 
 }

@@ -83,9 +83,9 @@ public class PresenceController {
 
 			boolean isNotRemote = currentUser.get().getIsRemote();
 			
-			//boolean isCompanyInRemoteMode = this.configurat
+			boolean isCompanyInRemoteMode = configuration.isRemoteMode();
 
-			if ((distanceCondition && isNotOutNietherInHoliday && timeCondition) || isNotRemote) {
+			if (((distanceCondition && isNotOutNietherInHoliday && timeCondition) || isNotRemote) || isCompanyInRemoteMode ) {
 				//
 
 				DailyRecord currentDaily = dailyRepository.findByDateAndUserId(currentDate, currentUser.get().getId());
