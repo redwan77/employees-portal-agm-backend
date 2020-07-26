@@ -18,10 +18,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.jobcommit.model.AbsenceRequest;
 import com.jobcommit.model.AbsenceVerification;
 import com.jobcommit.model.Delay;
+import com.jobcommit.model.Notification;
 import com.jobcommit.model.User;
 import com.jobcommit.repository.AbsenceRequestRepository;
 import com.jobcommit.repository.AbsenceVerificationRepository;
 import com.jobcommit.repository.DelayRepository;
+import com.jobcommit.repository.NotificationRepository;
 import com.jobcommit.repository.UserRepository;
 import com.jobcommit.security.CustomSecurityAthenticationProvider;
 
@@ -40,6 +42,9 @@ public class AbsenceController {
 
 	@Autowired
 	public DelayRepository delayRepository;
+
+	@Autowired
+	public NotificationRepository notificationRepository;
 
 	@PostMapping("absenceRequest")
 	public ResponseEntity<?> addAbsenceRequest(@RequestBody AbsenceRequest body) {
@@ -108,18 +113,61 @@ public class AbsenceController {
 
 	@PutMapping("updateRequest")
 	public ResponseEntity<?> updateAbsenceRequest(@RequestBody AbsenceRequest body) {
+
+		Notification newNotification = new Notification();
+		String notificationMessage = "";
+		Optional<User> currentUser = userRepository.findById(CustomSecurityAthenticationProvider.userDetails.getId());
+
+		if (body.getAccepted() == null) {
+
+			notificationMessage = "your manager has requested you to a meeting to disscuss the delay verification you have made  !";
+		} else if (body.getAccepted() == false) {
+
+			body.setIsSettled(true);
+			notificationMessage = "your delay verification was accepted by the manager !";
+		} else if (body.getAccepted() == true) {
+
+			body.setIsSettled(true);
+			notificationMessage = "your delay verification was rejected by the manager !";
+		}
+
+		newNotification.setMessage(notificationMessage);
+
+		newNotification.setUser(currentUser.get());
+
+		notificationRepository.save(newNotification);
+
 		absenceRequestRepository.save(body);
 		return new ResponseEntity<>(absenceRequestRepository.findAll(), HttpStatus.OK);
 	}
 
+	// admin layout
 	@PutMapping("updateDelay")
 	public ResponseEntity<?> updatedelay(@RequestBody Delay body) {
-		
-		if (body.getVerified() != null) {
-			body.setIsSatteled(true);
-			System.out.println("triggered");
+
+		Notification newNotification = new Notification();
+		String notificationMessage = "";
+		Optional<User> currentUser = userRepository.findById(CustomSecurityAthenticationProvider.userDetails.getId());
+
+		if (body.getVerified() == null) {
+			notificationMessage = "your manager has requested you to a meeting to disscuss the delay verification you have made  !";
 		}
+		else if (body.getVerified() == true) {
+			body.setIsSatteled(true);
+			notificationMessage = "your delay verification was accepted by the manager !";
+		} else if (body.getVerified() == false) {
+			body.setIsSatteled(true);
+			notificationMessage = "your delay verification was rejected by the manager !";
+		} 
+
+		newNotification.setMessage(notificationMessage);
+
+		newNotification.setUser(currentUser.get());
+
+		notificationRepository.save(newNotification);
+
 		delayRepository.save(body);
+
 		return new ResponseEntity<>(delayRepository.findAll(), HttpStatus.OK);
 	}
 

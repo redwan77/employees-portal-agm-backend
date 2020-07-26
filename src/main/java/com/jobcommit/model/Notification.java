@@ -23,6 +23,7 @@ public class Notification {
 	
 	public Notification() {
 		super();
+		this.seen = false;
 		// TODO Auto-generated constructor stub
 	}
 

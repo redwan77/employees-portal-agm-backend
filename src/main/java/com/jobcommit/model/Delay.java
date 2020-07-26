@@ -30,6 +30,15 @@ public class Delay {
 	private Boolean isSatteled;
 
 	private String verification;
+	
+	
+
+	public Delay() {
+		
+		super();
+		// TODO Auto-generated constructor stub
+		this.verified = null;
+	}
 
 	@ManyToOne
 	@JoinColumn(name = "user")

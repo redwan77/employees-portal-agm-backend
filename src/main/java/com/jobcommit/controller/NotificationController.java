@@ -31,7 +31,6 @@ public class NotificationController {
 	@PostMapping("markAsSeen")
 	public boolean markNotificationsAsReaded(@RequestBody List<Long> id) {
 
-		System.out.println("haha");
 		id.forEach(nid -> {
 			Notification not = notificationRepository.findById(nid).get() ;
 			not.setSeen(true);

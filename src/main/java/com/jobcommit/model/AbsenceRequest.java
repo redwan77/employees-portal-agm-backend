@@ -27,7 +27,8 @@ public class AbsenceRequest {
 	private String reason;
 	private String description;
 	private Boolean isSettled;
-	private Boolean accepted ;
+	private Boolean accepted  ;
+	private Boolean verified;
 
 	@ManyToOne
 	@JoinColumn(name = "user")
@@ -35,7 +36,7 @@ public class AbsenceRequest {
 	private User user;
 
 	public AbsenceRequest() {
-		super();
+		accepted =null;
 		// TODO Auto-generated constructor stub
 	}
 
@@ -110,6 +111,20 @@ public class AbsenceRequest {
 	public void setAccepted(Boolean accepted) {
 		this.accepted = accepted;
 	}
+
+	public Boolean getVerified() {
+		return verified;
+	}
+
+	public void setVerified(Boolean verified) {
+		this.verified = verified;
+	}
+
+	public void setIsSettled(Boolean isSettled) {
+		this.isSettled = isSettled;
+	}
+	
+	
 	
 	
 
