@@ -33,7 +33,7 @@ public class Delay {
 
 	@ManyToOne
 	@JoinColumn(name = "user")
-	@JsonIgnore
+	
 	private User user;
 
 	public Long getId() {

@@ -82,6 +82,8 @@ public class PresenceController {
 					&& request.getRequestTime().compareTo(configuration.getEndTime()) <= 0;
 
 			boolean isNotRemote = currentUser.get().getIsRemote();
+			
+			//boolean isCompanyInRemoteMode = this.configurat
 
 			if ((distanceCondition && isNotOutNietherInHoliday && timeCondition) || isNotRemote) {
 				//
