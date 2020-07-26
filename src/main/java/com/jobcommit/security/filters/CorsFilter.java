@@ -33,7 +33,7 @@ public class CorsFilter extends OncePerRequestFilter {
 		// if the request is a PREFLIGHT CORS request approve the headers else continue processing 
 		if (request.getMethod().equals("OPTIONS")) {
 			response.setStatus(201);
-			System.out.println("From cors filter :" + request.getMethod());
+			//System.out.println("From cors filter :" + request.getMethod());
 		}
 		else 
 		filterChain.doFilter(request, response);

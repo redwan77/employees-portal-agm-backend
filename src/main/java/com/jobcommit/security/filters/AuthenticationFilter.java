@@ -35,10 +35,10 @@ public class AuthenticationFilter extends OncePerRequestFilter {
 				.collect(Collectors.toMap(h -> h, httpRequest::getHeader));
 
 		headers.keySet().forEach(k -> {
-			System.out.println(k + " => " + headers.get(k));
+			//System.out.println(k + " => " + headers.get(k));
 		});
 		
-		System.out.println("******************************************************");
+		//System.out.println("******************************************************");
 
 		if (request.getRequestURI().contentEquals("/login")) {
 			filterChain.doFilter(request, response);

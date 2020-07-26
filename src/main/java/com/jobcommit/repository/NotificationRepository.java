@@ -8,6 +8,6 @@ import com.jobcommit.model.Notification;
 
 public interface  NotificationRepository extends JpaRepository<Notification, Long> {
 	
-	public List<Notification> findByUserId(Long id);
+	public List<Notification> findByUserIdAndSeen(Long id, boolean value);
 
 }
